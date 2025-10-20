@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Calendar, CheckCircle, FileText, FolderOpen, ListChecks, ShieldCheck, Star, ArrowRight } from 'lucide-react';
 import { services as categories } from '@/data/services';
+import EmbeddedContactForm from '@/components/forms/EmbeddedContactForm';
 
 interface ServicePageProps {
   params: {
@@ -157,14 +158,11 @@ export default function ServiceDetailPage({ params }: ServicePageProps) {
         </div>
       </section>
 
-      {/* Contact attach (existing page via anchor) */}
+      {/* Embedded Contact Form */}
       <section id="contact" className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Ready to start {svc.name}?</h3>
-          <p className="text-gray-600 mb-6">We&apos;ll prefill your inquiry for faster assistance.</p>
-          <Link href={contactHref} className="inline-flex items-center px-6 py-3 bg-brand-navy text-white rounded-lg hover:bg-brand-navy/90">
-            Go to Contact Form
-          </Link>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">Ready to start {svc.name}?</h3>
+          <EmbeddedContactForm preselectedService={svc.name} />
         </div>
       </section>
     </div>
