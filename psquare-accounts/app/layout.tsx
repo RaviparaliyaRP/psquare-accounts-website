@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Layout from "@/components/layout/Layout";
+import PerformanceOptimizer from "@/components/PerformanceOptimizer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,14 +26,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://psquareaccounts.com'),
+  metadataBase: new URL('https://psqaure-accounts-sz3a.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Psquare Accounts - Your Trusted Partner for Business Licensing & Registration",
     description: "From Registration to Approval — We Handle It All. Expert business licensing, compliance, and registration services across India.",
-    url: 'https://psquareaccounts.com',
+    url: 'https://psqaure-accounts-sz3a.vercel.app',
     siteName: 'Psquare Accounts',
     images: [
       {
@@ -83,6 +84,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <PerformanceOptimizer />
         <Layout>
           {children}
         </Layout>
