@@ -60,7 +60,7 @@ export default function ServiceDetailPage({ params }: ServicePageProps) {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-brand-navy via-brand-navy to-brand-orange text-white">
+      <section className="relative overflow-hidden gradient-contrast text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="mb-6 text-sm text-white/80">
             <Link href="/services" className="hover:text-white">Services</Link>
