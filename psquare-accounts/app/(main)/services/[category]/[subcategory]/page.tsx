@@ -22,14 +22,6 @@ export default function SubCategoryPage() {
   const categoryId = params.category as string;
   const subCategoryId = params.subcategory as string;
 
-  useEffect(() => {
-    fetchSubCategoryData();
-  }, [fetchSubCategoryData]);
-
-  useEffect(() => {
-    filterServices();
-  }, [filterServices]);
-
   const fetchSubCategoryData = useCallback(async () => {
     try {
       setLoading(true);
@@ -72,6 +64,14 @@ export default function SubCategoryPage() {
 
     setFilteredServices(filtered);
   }, [services, searchTerm, showTrending]);
+
+  useEffect(() => {
+    fetchSubCategoryData();
+  }, [fetchSubCategoryData]);
+
+  useEffect(() => {
+    filterServices();
+  }, [filterServices]);
 
   const handleContactClick = (service: Service) => {
     setSelectedService(service);
