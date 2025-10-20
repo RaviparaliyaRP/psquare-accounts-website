@@ -1,4 +1,8 @@
 {
+  "buildCommand": "cd psquare-accounts && npm run build",
+  "outputDirectory": "psquare-accounts/.next",
+  "installCommand": "cd psquare-accounts && npm install",
+  "framework": "nextjs",
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
   ]
