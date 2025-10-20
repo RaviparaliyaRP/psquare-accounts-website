@@ -92,13 +92,25 @@ export default function CategoryPage({ params }: CategoryPageProps) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {category.subCategories.map((subCategory) => (
-              <SubCategoryCard
-                key={subCategory.id}
-                subCategory={subCategory}
-                categoryId={category.id}
-              />
-            ))}
+            {category.subCategories.map((subCategory) => {
+              // Enrich services with category and subCategory properties
+              const enrichedSubCategory = {
+                ...subCategory,
+                services: subCategory.services.map(service => ({
+                  ...service,
+                  category: category.id,
+                  subCategory: subCategory.id
+                }))
+              };
+              
+              return (
+                <SubCategoryCard
+                  key={subCategory.id}
+                  subCategory={enrichedSubCategory}
+                  categoryId={category.id}
+                />
+              );
+            })}
           </div>
 
           {category.subCategories.length === 0 && (
