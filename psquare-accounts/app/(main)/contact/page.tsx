@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Metadata } from 'next';
+// import { Metadata } from 'next';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -370,7 +370,7 @@ export default function ContactPage() {
                   What documents do I need for GST registration?
                 </h3>
                 <p className="text-gray-600">
-                  You'll need PAN card, Aadhaar card, bank account details, business address proof, and incorporation certificate.
+                  You&apos;ll need PAN card, Aadhaar card, bank account details, business address proof, and incorporation certificate.
                 </p>
               </CardContent>
             </Card>
