@@ -1,4 +1,5 @@
 import { CheckCircle, Clock, Users, Shield, Award, Phone, Mail, MapPin } from 'lucide-react';
+import Image from 'next/image';
 
 const whyChooseUs = [
   {
@@ -126,9 +127,11 @@ export default function WhyChooseUs() {
             </div>
             <div className="text-center">
               <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 mx-auto mb-4">
-                <img 
+                <Image 
                   src="/psqaure-owner.png" 
                   alt="Mr. Umang Patel - Founder & CEO" 
+                  width={128}
+                  height={128}
                   className="w-full h-full object-cover"
                 />
               </div>

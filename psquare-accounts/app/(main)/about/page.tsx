@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { Building2, Users, Award, Clock, MapPin, Phone, Mail } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'About Us - Psquare Accounts | Your Trusted Business Partner',
@@ -131,10 +132,17 @@ export default function AboutPage() {
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row items-center gap-8">
                   <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-brand-navy">
-                    <img 
+                    <Image 
                       src="/psqaure-owner.png" 
                       alt="Mr. Umang Patel - Founder & CEO" 
+                      width={128}
+                      height={128}
                       className="w-full h-full object-cover"
+                      onError={(e) => {
+                        console.error('Image failed to load:', e);
+                        e.currentTarget.style.display = 'none';
+                      }}
+                      onLoad={() => console.log('Owner image loaded successfully')}
                     />
                   </div>
                   <div className="text-center md:text-left">

@@ -122,9 +122,11 @@ export default function Hero() {
                     {/* Owner Photo */}
                     <div className="mt-6 flex flex-col items-center">
                       <div className="w-20 h-20 rounded-full overflow-hidden border-3 border-white/30 mb-2">
-                        <img 
+                        <Image 
                           src="/psqaure-owner.png" 
                           alt="Mr. Umang Patel - Founder & CEO" 
+                          width={80}
+                          height={80}
                           className="w-full h-full object-cover"
                         />
                       </div>

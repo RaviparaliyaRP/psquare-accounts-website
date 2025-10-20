@@ -9,6 +9,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import Image from 'next/image';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -368,9 +369,11 @@ export default function ContactPage() {
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row items-center gap-8">
                   <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-brand-navy">
-                    <img 
+                    <Image 
                       src="/psqaure-owner.png" 
                       alt="Mr. Umang Patel - Founder & CEO" 
+                      width={128}
+                      height={128}
                       className="w-full h-full object-cover"
                     />
                   </div>
