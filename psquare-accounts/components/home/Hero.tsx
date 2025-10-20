@@ -118,6 +118,19 @@ export default function Hero() {
                     <div className="text-white text-2xl font-bold">Psquare</div>
                     <div className="text-brand-orange text-lg font-semibold">Accounts</div>
                     <div className="text-white/70 text-sm mt-2">Established 2010</div>
+                    
+                    {/* Owner Photo */}
+                    <div className="mt-6 flex flex-col items-center">
+                      <div className="w-20 h-20 rounded-full overflow-hidden border-3 border-white/30 mb-2">
+                        <img 
+                          src="/psqaure-owner.png" 
+                          alt="Mr. Umang Patel - Founder & CEO" 
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div className="text-white text-sm font-semibold">Mr. Umang Patel</div>
+                      <div className="text-white/80 text-xs">Founder & CEO</div>
+                    </div>
                   </div>
                 </div>
               </div>

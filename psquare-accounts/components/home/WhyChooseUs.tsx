@@ -125,8 +125,12 @@ export default function WhyChooseUs() {
               </div>
             </div>
             <div className="text-center">
-              <div className="w-32 h-32 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="h-16 w-16 text-white" />
+              <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 mx-auto mb-4">
+                <img 
+                  src="/psqaure-owner.png" 
+                  alt="Mr. Umang Patel - Founder & CEO" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="text-white font-semibold text-lg">Mr. Umang Patel</div>
               <div className="text-white/80">Founder & Managing Director</div>
