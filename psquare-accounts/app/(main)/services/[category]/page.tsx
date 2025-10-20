@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import SubCategoryCard from '@/components/services/SubCategoryCard';
-import { ServiceCategory } from '@/types';
+// ServiceCategory type not used directly; relying on data shape
 import { services } from '@/data/services';
 
 interface CategoryPageProps {

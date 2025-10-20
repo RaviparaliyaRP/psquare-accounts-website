@@ -4,7 +4,6 @@ import { ArrowLeft, Calendar, Clock, User, Share2, Tag } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { blogPosts, blogCategories } from '@/data/blog';
-import { BlogPost } from '@/types/blog';
 
 interface BlogPostPageProps {
   params: {
@@ -53,7 +52,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Post Not Found</h1>
-          <p className="text-xl text-gray-600 mb-8">The blog post you're looking for doesn't exist.</p>
+          <p className="text-xl text-gray-600 mb-8">The blog post you&apos;re looking for doesn&apos;t exist.</p>
           <Link href="/blog">
             <Button className="bg-brand-navy hover:bg-brand-navy/90 text-white">
               <ArrowLeft className="h-4 w-4 mr-2" />

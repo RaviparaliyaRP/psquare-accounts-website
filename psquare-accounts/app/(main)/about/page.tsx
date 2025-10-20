@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { Building2, Users, Award, Clock, MapPin, Phone, Mail, Calendar } from 'lucide-react';
+import { Building2, Users, Award, Clock, MapPin, Phone, Mail } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 export const metadata: Metadata = {
@@ -82,7 +82,7 @@ export default function AboutPage() {
               Our Mission & Vision
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We are committed to providing comprehensive business solutions that empower entrepreneurs and businesses to thrive in today's competitive market.
+              We are committed to providing comprehensive business solutions that empower entrepreneurs and businesses to thrive in today&apos;s competitive market.
             </p>
           </div>
           
@@ -106,7 +106,7 @@ export default function AboutPage() {
                   <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
                 </div>
                 <p className="text-gray-600 text-lg">
-                  To become India's most trusted and comprehensive business registration and compliance partner, helping businesses grow while maintaining full legal compliance and operational excellence.
+                  To become India&apos;s most trusted and comprehensive business registration and compliance partner, helping businesses grow while maintaining full legal compliance and operational excellence.
                 </p>
               </CardContent>
             </Card>

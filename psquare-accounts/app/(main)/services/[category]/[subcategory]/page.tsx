@@ -93,7 +93,7 @@ export default function SubCategoryPage() {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Service Not Found</h1>
-          <p className="text-xl text-gray-600 mb-8">The service you're looking for doesn't exist.</p>
+          <p className="text-xl text-gray-600 mb-8">The service you&apos;re looking for doesn&apos;t exist.</p>
           <Link href="/services">
             <button className="px-6 py-3 bg-brand-navy text-white rounded-lg hover:bg-brand-navy/90">
               Back to Services

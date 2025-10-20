@@ -43,7 +43,7 @@ export default function AdminLoginPage() {
       } else {
         setError('Invalid password. Please try again.');
       }
-    } catch (error) {
+    } catch (err) {
       setError('Login failed. Please try again.');
     } finally {
       setIsLoading(false);

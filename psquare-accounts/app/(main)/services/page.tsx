@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import CategoryCard from '@/components/services/CategoryCard';
-import { ServiceCategory } from '@/types';
+// ServiceCategory type not used directly; relying on data shape
 import { services } from '@/data/services';
 
 export const metadata: Metadata = {

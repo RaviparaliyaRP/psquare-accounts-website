@@ -1,15 +1,14 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { Metadata } from 'next';
 import Link from 'next/link';
-import { Search, Calendar, Clock, User, ArrowRight, Filter } from 'lucide-react';
+import { Search, Calendar, Clock, User, ArrowRight } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { blogPosts, blogCategories } from '@/data/blog';
-import { BlogPost, BlogCategory } from '@/types/blog';
+// types imported from data usage only; no direct types needed here
 
 export default function BlogPage() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -53,7 +52,6 @@ export default function BlogPage() {
   }, [searchTerm, selectedCategory, sortBy]);
 
   const featuredPosts = blogPosts.filter(post => post.featured);
-  const recentPosts = blogPosts.slice(0, 3);
 
   return (
     <div className="min-h-screen bg-gray-50">
