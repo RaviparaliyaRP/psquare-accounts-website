@@ -1,9 +1,9 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { useParams, useRouter } from 'next/navigation';
+import { useState, useEffect, useCallback } from 'react';
+import { useParams } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, TrendingUp } from 'lucide-react';
+import { ArrowLeft, TrendingUp, Search } from 'lucide-react';
 import ServiceCard from '@/components/services/ServiceCard';
 import ServiceModal from '@/components/services/ServiceModal';
 import { Service, ServiceSubCategory } from '@/types';
@@ -24,13 +24,13 @@ export default function SubCategoryPage() {
 
   useEffect(() => {
     fetchSubCategoryData();
-  }, [categoryId, subCategoryId]);
+  }, [fetchSubCategoryData]);
 
   useEffect(() => {
     filterServices();
-  }, [services, searchTerm, showTrending]);
+  }, [filterServices]);
 
-  const fetchSubCategoryData = async () => {
+  const fetchSubCategoryData = useCallback(async () => {
     try {
       setLoading(true);
       const response = await fetch(`/api/services?category=${categoryId}&subCategory=${subCategoryId}`);
@@ -52,9 +52,9 @@ export default function SubCategoryPage() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [categoryId, subCategoryId]);
 
-  const filterServices = () => {
+  const filterServices = useCallback(() => {
     let filtered = services;
 
     // Search filter
@@ -71,7 +71,7 @@ export default function SubCategoryPage() {
     }
 
     setFilteredServices(filtered);
-  };
+  }, [services, searchTerm, showTrending]);
 
   const handleContactClick = (service: Service) => {
     setSelectedService(service);
