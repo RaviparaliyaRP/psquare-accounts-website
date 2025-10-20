@@ -3,8 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { X, Menu, ChevronDown, ChevronRight } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { X, ChevronDown, ChevronRight } from 'lucide-react';
 
 const navigation = [
   { name: 'Home', href: '/' },

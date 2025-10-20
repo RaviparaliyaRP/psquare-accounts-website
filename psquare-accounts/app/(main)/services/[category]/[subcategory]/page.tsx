@@ -3,14 +3,13 @@
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, Search, Filter, TrendingUp } from 'lucide-react';
+import { ArrowLeft, TrendingUp } from 'lucide-react';
 import ServiceCard from '@/components/services/ServiceCard';
 import ServiceModal from '@/components/services/ServiceModal';
 import { Service, ServiceSubCategory } from '@/types';
 
 export default function SubCategoryPage() {
   const params = useParams();
-  const router = useRouter();
   const [subCategory, setSubCategory] = useState<ServiceSubCategory | null>(null);
   const [services, setServices] = useState<Service[]>([]);
   const [filteredServices, setFilteredServices] = useState<Service[]>([]);

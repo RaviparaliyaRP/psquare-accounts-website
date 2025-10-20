@@ -1,7 +1,6 @@
 import { ReactNode } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import MobileNav from './MobileNav';
 
 interface LayoutProps {
   children: ReactNode;

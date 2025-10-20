@@ -1,5 +1,6 @@
 import { clsx, type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
+import { Service } from "@/types"
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -77,7 +78,7 @@ export function isValidPhone(phone: string): boolean {
 }
 
 // Search utilities
-export function searchServices(services: any[], query: string): any[] {
+export function searchServices(services: Service[], query: string): Service[] {
   if (!query.trim()) return services;
   
   const searchTerm = query.toLowerCase();
@@ -101,7 +102,7 @@ export function formatFileSize(bytes: number): string {
 }
 
 // Debounce function for search
-export function debounce<T extends (...args: any[]) => any>(
+export function debounce<T extends (...args: unknown[]) => unknown>(
   func: T,
   wait: number
 ): (...args: Parameters<T>) => void {

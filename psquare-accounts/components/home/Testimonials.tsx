@@ -146,7 +146,7 @@ export default function Testimonials() {
             What Our Clients Say
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Don't just take our word for it. Here's what our satisfied clients have to say 
+            Don&apos;t just take our word for it. Here&apos;s what our satisfied clients have to say 
             about their experience with Psquare Accounts.
           </p>
         </div>
@@ -169,7 +169,7 @@ export default function Testimonials() {
 
                 {/* Content */}
                 <blockquote className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8 italic">
-                  "{testimonials[currentIndex].content}"
+                  &ldquo;{testimonials[currentIndex].content}&rdquo;
                 </blockquote>
 
                 {/* Author */}

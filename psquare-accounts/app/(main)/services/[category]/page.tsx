@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, Search } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import SubCategoryCard from '@/components/services/SubCategoryCard';
 import { ServiceCategory } from '@/types';
 

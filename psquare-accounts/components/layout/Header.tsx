@@ -5,7 +5,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Phone, Mail } from 'lucide-react';
-import { cn } from '@/lib/utils';
 import MobileNav from './MobileNav';
 
 const navigation = [

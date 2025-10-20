@@ -49,7 +49,7 @@ export default function WhyChooseUs() {
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             We are committed to providing exceptional service with transparency, expertise, and reliability. 
-            Here's what makes us the preferred choice for business licensing and registration.
+            Here&apos;s what makes us the preferred choice for business licensing and registration.
           </p>
         </div>
 
