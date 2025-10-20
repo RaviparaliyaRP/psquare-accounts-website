@@ -73,12 +73,12 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
     <>
       {/* Backdrop */}
       <div 
-        className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
+        className="fixed inset-0 bg-black bg-opacity-50 z-[120] lg:hidden"
         onClick={onClose}
       />
       
       {/* Mobile Menu */}
-      <div className="fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-brand-navy shadow-xl lg:hidden">
+      <div className="fixed inset-y-0 right-0 z-[130] w-full max-w-sm bg-brand-navy shadow-xl lg:hidden">
         <div className="flex flex-col h-full">
           {/* Header */}
           <div className="flex items-center justify-between p-4 border-b border-brand-orange/20">
