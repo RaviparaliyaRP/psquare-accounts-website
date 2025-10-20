@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import CategoryCard from '@/components/services/CategoryCard';
 import { ServiceCategory } from '@/types';
+import { services } from '@/data/services';
 
 export const metadata: Metadata = {
   title: 'Our Services - Business Licensing & Registration Services',
@@ -8,28 +9,8 @@ export const metadata: Metadata = {
   keywords: 'business services, company registration, licensing, compliance, FSSAI, GST, trademark, India',
 };
 
-// Fetch services data
-async function getServicesData(): Promise<ServiceCategory[]> {
-  try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/services`, {
-      cache: 'no-store', // Always fetch fresh data
-    });
-    
-    if (!response.ok) {
-      throw new Error('Failed to fetch services');
-    }
-    
-    const data = await response.json();
-    return data.data || [];
-  } catch (error) {
-    console.error('Error fetching services:', error);
-    // Return fallback data if API fails
-    return [];
-  }
-}
-
-export default async function ServicesPage() {
-  const categories = await getServicesData();
+export default function ServicesPage() {
+  const categories = services;
 
   return (
     <div className="min-h-screen bg-gray-50">

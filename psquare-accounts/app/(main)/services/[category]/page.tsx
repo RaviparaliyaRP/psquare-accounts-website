@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import SubCategoryCard from '@/components/services/SubCategoryCard';
 import { ServiceCategory } from '@/types';
+import { services } from '@/data/services';
 
 interface CategoryPageProps {
   params: {
@@ -11,141 +12,82 @@ interface CategoryPageProps {
   };
 }
 
-// Fetch category data
-async function getCategoryData(categoryId: string): Promise<ServiceCategory | null> {
-  try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/services?category=${categoryId}`, {
-      cache: 'no-store',
-    });
-    
-    if (!response.ok) {
-      throw new Error('Failed to fetch category data');
-    }
-    
-    const data = await response.json();
-    return data.data?.[0] || null;
-  } catch (error) {
-    console.error('Error fetching category data:', error);
-    return null;
-  }
-}
-
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
-  const category = await getCategoryData(params.category);
+  const category = services.find(cat => cat.id === params.category);
   
   if (!category) {
     return {
-      title: 'Category Not Found',
+      title: 'Category Not Found - Psquare Accounts',
     };
   }
 
   return {
-    title: `${category.name} Services - Psquare Accounts`,
+    title: `${category.name} - Psquare Accounts Services`,
     description: category.description,
-    keywords: `${category.name}, business services, licensing, registration, India`,
+    keywords: `${category.name}, business services, ${category.name.toLowerCase()}`,
   };
 }
 
-export default async function CategoryPage({ params }: CategoryPageProps) {
-  const category = await getCategoryData(params.category);
+export async function generateStaticParams() {
+  return services.map((category) => ({
+    category: category.id,
+  }));
+}
+
+export default function CategoryPage({ params }: CategoryPageProps) {
+  const category = services.find(cat => cat.id === params.category);
 
   if (!category) {
     notFound();
   }
 
-  // Calculate total services
-  const totalServices = category.subCategories.reduce(
-    (total, sub) => total + sub.services.length, 
-    0
-  );
-
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Breadcrumb */}
-      <div className="bg-white border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <nav className="flex items-center space-x-2 text-sm">
-            <Link href="/" className="text-gray-500 hover:text-brand-orange">
-              Home
-            </Link>
-            <span className="text-gray-400">/</span>
-            <Link href="/services" className="text-gray-500 hover:text-brand-orange">
-              Services
-            </Link>
-            <span className="text-gray-400">/</span>
-            <span className="text-brand-navy font-medium">{category.name}</span>
-          </nav>
-        </div>
-      </div>
-
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-brand-navy to-brand-orange text-white py-12">
+      {/* Header */}
+      <div className="bg-gradient-to-r from-brand-navy to-brand-orange text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between">
-            <div className="flex-1">
-              <Link
-                href="/services"
-                className="inline-flex items-center text-white/80 hover:text-white mb-4 transition-colors duration-200"
-              >
-                <ArrowLeft className="h-4 w-4 mr-2" />
-                Back to Services
-              </Link>
-              <h1 className="text-3xl md:text-4xl font-bold mb-4">
-                {category.name}
-              </h1>
-              <p className="text-lg text-white/90 max-w-2xl">
-                {category.description}
-              </p>
-            </div>
-            <div className="hidden md:block">
-              <div className="text-right">
+          <div className="flex items-center mb-6">
+            <Link 
+              href="/services" 
+              className="flex items-center text-white/80 hover:text-white transition-colors"
+            >
+              <ArrowLeft className="h-5 w-5 mr-2" />
+              Back to Services
+            </Link>
+          </div>
+          
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              {category.name}
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
+              {category.description}
+            </p>
+            <div className="flex justify-center items-center space-x-8 text-white/80">
+              <div className="text-center">
                 <div className="text-2xl font-bold">{category.subCategories.length}</div>
-                <div className="text-white/80">Categories</div>
-                <div className="text-2xl font-bold mt-2">{totalServices}</div>
-                <div className="text-white/80">Services</div>
+                <div className="text-sm">Sub-Categories</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold">
+                  {category.subCategories.reduce((acc, sub) => acc + sub.services.length, 0)}
+                </div>
+                <div className="text-sm">Services</div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Stats Section */}
-      <div className="bg-white py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div>
-              <div className="text-2xl font-bold text-brand-navy">{category.subCategories.length}</div>
-              <div className="text-gray-600 text-sm">Sub-Categories</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-brand-navy">{totalServices}</div>
-              <div className="text-gray-600 text-sm">Total Services</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-brand-navy">
-                {category.subCategories.reduce((total, sub) => 
-                  total + sub.services.filter(s => s.isTrending).length, 0
-                )}
-              </div>
-              <div className="text-gray-600 text-sm">Trending Services</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-brand-navy">7-15</div>
-              <div className="text-gray-600 text-sm">Days Processing</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Sub-Categories */}
+      {/* Sub-Categories Grid */}
       <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-brand-navy mb-4">
-              Available Services
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Choose Your Service Category
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Choose from our comprehensive range of {category.name.toLowerCase()} services.
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Select from our comprehensive range of {category.name.toLowerCase()} services
             </p>
           </div>
 
@@ -158,31 +100,38 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               />
             ))}
           </div>
+
+          {category.subCategories.length === 0 && (
+            <div className="text-center py-12">
+              <div className="text-gray-500 text-lg">
+                No sub-categories available for this service category.
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
       {/* CTA Section */}
-      <div className="bg-brand-navy text-white py-16">
+      <div className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6">
-            Need Help with {category.name}?
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Need Help Choosing?
           </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Our experts are ready to help you with all your {category.name.toLowerCase()} needs.
+          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            Our expert team is here to help you find the right service for your business needs.
           </p>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/contact"
-              className="bg-brand-orange hover:bg-brand-orange/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
-            >
-              Get Free Consultation
-            </a>
-            <a
-              href="tel:+918866114756"
-              className="border-2 border-white text-white hover:bg-white hover:text-brand-navy px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
-            >
-              Call Now: +91 88661 14756
-            </a>
+            <Link href="/contact">
+              <button className="px-8 py-4 bg-gradient-to-r from-brand-navy to-brand-orange text-white font-bold rounded-lg hover:opacity-90 transition-opacity">
+                Get Free Consultation
+              </button>
+            </Link>
+            <Link href="/services">
+              <button className="px-8 py-4 border-2 border-brand-navy text-brand-navy font-bold rounded-lg hover:bg-brand-navy hover:text-white transition-colors">
+                View All Services
+              </button>
+            </Link>
           </div>
         </div>
       </div>
