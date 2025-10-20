@@ -32,8 +32,20 @@ export default function SubCategoryPage() {
       if (category) {
         const subCategoryData = category.subCategories.find(sub => sub.id === subCategoryId);
         if (subCategoryData) {
-          setSubCategory(subCategoryData);
-          setServicesList(subCategoryData.services);
+          const servicesWithMeta: Service[] = subCategoryData.services.map((svc) => ({
+            ...svc,
+            category: category.id,
+            subCategory: subCategoryData.id,
+          }));
+
+          // Set enriched services and a compatible subCategory object
+          setServicesList(servicesWithMeta);
+          setSubCategory({
+            id: subCategoryData.id,
+            name: subCategoryData.name,
+            description: subCategoryData.description,
+            services: servicesWithMeta,
+          } as ServiceSubCategory);
         }
       }
     } catch (error) {
