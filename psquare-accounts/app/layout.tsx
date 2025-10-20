@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Layout from "@/components/layout/Layout";
 import PerformanceOptimizer from "@/components/PerformanceOptimizer";
+import ResponsivenessTester from "@/components/ResponsivenessTester";
+import ErrorBoundary from "@/components/ErrorBoundary";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -85,9 +87,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <PerformanceOptimizer />
-        <Layout>
-          {children}
-        </Layout>
+        <ErrorBoundary>
+          <Layout>
+            {children}
+          </Layout>
+        </ErrorBoundary>
+        <ResponsivenessTester />
       </body>
     </html>
   );
