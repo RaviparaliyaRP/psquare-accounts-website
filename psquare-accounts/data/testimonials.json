@@ -1,0 +1,92 @@
+[
+  {
+    "id": "testimonial-1",
+    "name": "Ritika Verma",
+    "designation": "Founder",
+    "company": "FinEdge Group",
+    "content": "Psqaure Accounts truly stands by their words. They handled our company registration, GST setup, and compliance without a single delay. The process was so smooth that we didn't have to follow up even once. Exceptional professionalism!",
+    "rating": 5,
+    "image": null
+  },
+  {
+    "id": "testimonial-2",
+    "name": "Rahul Singh",
+    "designation": "CEO",
+    "company": "UrbanMark Realtors",
+    "content": "One of the most trustworthy and transparent service providers we've worked with. Their team explained every process clearly and helped us avoid unnecessary costs. You can genuinely feel the honesty in their approach.",
+    "rating": 5,
+    "image": null
+  },
+  {
+    "id": "testimonial-3",
+    "name": "Nikhil Bhatia",
+    "designation": "Director",
+    "company": "Alpha Build Systems",
+    "content": "We've been associated with Psqaure Accounts for over three years now. Their consistency and commitment to quality are remarkable. Every compliance and accounting update is handled on time, without stress.",
+    "rating": 5,
+    "image": null
+  },
+  {
+    "id": "testimonial-4",
+    "name": "Shruti Jain",
+    "designation": "Co-founder",
+    "company": "NovaEdge Technologies",
+    "content": "As a startup founder, I was nervous about legal formalities, but Psqaure Accounts made everything effortless. They guided me step-by-step and completed my company registration within days. Highly recommended for new entrepreneurs!",
+    "rating": 5,
+    "image": null
+  },
+  {
+    "id": "testimonial-5",
+    "name": "Amit Khanna",
+    "designation": "Managing Director",
+    "company": "BlueSky Solutions Pvt. Ltd.",
+    "content": "The team at Psqaure Accounts doesn't just work for you; they work with you. Their personal attention and clarity at every step made us feel like we were in safe hands. True professionals with a human touch.",
+    "rating": 5,
+    "image": null
+  },
+  {
+    "id": "testimonial-6",
+    "name": "Neha Kapoor",
+    "designation": "CFO",
+    "company": "TruMark India",
+    "content": "What I liked most is their transparency. No hidden fees, no surprises — just clear communication and dependable service. I rarely give reviews, but Psqaure Accounts deserves it.",
+    "rating": 5,
+    "image": null
+  },
+  {
+    "id": "testimonial-7",
+    "name": "Deepak Tiwari",
+    "designation": "Founder",
+    "company": "ProLink Ventures",
+    "content": "Our company had multiple compliance issues before we came across Psqaure Accounts. Within weeks, their team streamlined everything and restored our peace of mind. The kind of reliability every business needs.",
+    "rating": 5,
+    "image": null
+  },
+  {
+    "id": "testimonial-8",
+    "name": "Simran Arora",
+    "designation": "Partner",
+    "company": "GlobeLine Associates",
+    "content": "I've worked with big consulting firms before, but none matched the personal care and accountability Psqaure Accounts provides. They treat every client like a long-term partner, not just another project.",
+    "rating": 5,
+    "image": null
+  },
+  {
+    "id": "testimonial-9",
+    "name": "Manish Patel",
+    "designation": "COO",
+    "company": "BrightAxis Group",
+    "content": "Their support team is available literally anytime you need them. Whether it's a compliance doubt or a tax query, they respond immediately with clarity. That kind of service is rare these days.",
+    "rating": 5,
+    "image": null
+  },
+  {
+    "id": "testimonial-10",
+    "name": "Priya Deshmukh",
+    "designation": "Managing Partner",
+    "company": "Vertex Builders",
+    "content": "Psqaure Accounts helped us restructure our business legally and financially with complete precision. Their advice saved us both time and money. Truly a company you can depend on for the long run.",
+    "rating": 5,
+    "image": null
+  }
+]

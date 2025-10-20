@@ -1,0 +1,962 @@
+{
+  "workTypeCategories": [
+    {
+      "id": "new-registration",
+      "name": "New Registration",
+      "description": "Complete business registration services from company formation to compliance setup",
+      "icon": "Building2",
+      "color": "brand-navy",
+      "subCategories": [
+        {
+          "id": "company-registration",
+          "name": "Company Registration",
+          "description": "Register your business entity with proper legal structure",
+          "services": [
+            {
+              "id": "private-limited-company",
+              "name": "Private Limited Company",
+              "description": "Most popular business structure for startups and growing businesses",
+              "isTrending": true
+            },
+            {
+              "id": "public-limited-company",
+              "name": "Public Limited Company",
+              "description": "For businesses planning to go public and raise capital",
+              "isTrending": false
+            },
+            {
+              "id": "one-person-company",
+              "name": "One Person Company",
+              "description": "Single person business with limited liability protection",
+              "isTrending": false
+            },
+            {
+              "id": "partnership-firm",
+              "name": "Partnership Firm Registration",
+              "description": "Traditional business structure for multiple partners",
+              "isTrending": false
+            },
+            {
+              "id": "llp-registration",
+              "name": "Limited Liability Partnership",
+              "description": "Hybrid structure combining partnership flexibility with limited liability",
+              "isTrending": true
+            },
+            {
+              "id": "sole-proprietorship",
+              "name": "Sole Proprietorship Registration",
+              "description": "Simplest business structure for individual entrepreneurs",
+              "isTrending": false
+            },
+            {
+              "id": "section-8-company",
+              "name": "Section 8 Company",
+              "description": "Non-profit organization registration for charitable purposes",
+              "isTrending": false
+            },
+            {
+              "id": "ngo-registration",
+              "name": "NGO Registration",
+              "description": "Non-governmental organization registration and compliance",
+              "isTrending": false
+            },
+            {
+              "id": "society-registration",
+              "name": "Society Registration",
+              "description": "Society registration for social, cultural, and educational purposes",
+              "isTrending": false
+            },
+            {
+              "id": "nidhi-company",
+              "name": "Nidhi Company",
+              "description": "Mutual benefit society for members' financial needs",
+              "isTrending": false
+            }
+          ]
+        },
+        {
+          "id": "hotel-registration",
+          "name": "Hotel Registration",
+          "description": "Complete hotel and hospitality business registration",
+          "services": [
+            {
+              "id": "hotel-registration-basic",
+              "name": "Hotel Registration",
+              "description": "Basic hotel registration for accommodation business",
+              "isTrending": false
+            },
+            {
+              "id": "one-star-hotel",
+              "name": "One Star Hotel Registration",
+              "description": "Registration for budget accommodation facilities",
+              "isTrending": false
+            },
+            {
+              "id": "two-star-hotel",
+              "name": "Two Star Hotel Registration",
+              "description": "Mid-range hotel registration with basic amenities",
+              "isTrending": false
+            },
+            {
+              "id": "three-star-hotel",
+              "name": "Three Star Hotel Registration",
+              "description": "Comfortable hotel registration with good amenities",
+              "isTrending": false
+            },
+            {
+              "id": "four-star-hotel-no-alcohol",
+              "name": "Four Star Hotel Without Alcohol Registration",
+              "description": "Premium hotel registration without liquor license",
+              "isTrending": false
+            },
+            {
+              "id": "four-star-hotel-with-alcohol",
+              "name": "Four Star Hotel With Alcohol Registration",
+              "description": "Premium hotel registration with liquor license",
+              "isTrending": false
+            },
+            {
+              "id": "five-star-hotel-no-alcohol",
+              "name": "Five Star Hotel Without Alcohol Registration",
+              "description": "Luxury hotel registration without liquor license",
+              "isTrending": false
+            },
+            {
+              "id": "five-star-hotel-with-alcohol",
+              "name": "Five Star Hotel With Alcohol Registration",
+              "description": "Luxury hotel registration with liquor license",
+              "isTrending": false
+            },
+            {
+              "id": "five-star-deluxe-hotel",
+              "name": "Five Star Deluxe Hotel Registration",
+              "description": "Ultra-luxury hotel registration with premium facilities",
+              "isTrending": false
+            },
+            {
+              "id": "homestay-registration",
+              "name": "Homestay Registration",
+              "description": "Registration for home-based accommodation services",
+              "isTrending": true
+            },
+            {
+              "id": "bnb-registration",
+              "name": "Bed & Breakfast (BnB) Registration",
+              "description": "Registration for bed and breakfast accommodation",
+              "isTrending": false
+            },
+            {
+              "id": "pg-license",
+              "name": "Paying Guest (PG) License Registration",
+              "description": "Registration for paying guest accommodation services",
+              "isTrending": false
+            },
+            {
+              "id": "guest-house-license",
+              "name": "Guest House License Registration",
+              "description": "Registration for guest house accommodation services",
+              "isTrending": false
+            },
+            {
+              "id": "restaurant-registration",
+              "name": "Restaurant Registration",
+              "description": "Complete restaurant business registration",
+              "isTrending": true
+            },
+            {
+              "id": "fine-dining-restaurant",
+              "name": "Fine Dining Restaurant Registration",
+              "description": "Registration for upscale dining establishments",
+              "isTrending": false
+            },
+            {
+              "id": "casual-dining-restaurant",
+              "name": "Casual Dining Restaurant Registration",
+              "description": "Registration for casual dining establishments",
+              "isTrending": false
+            },
+            {
+              "id": "coffee-cafe-registration",
+              "name": "Coffee Cafe Registration",
+              "description": "Registration for coffee shops and cafes",
+              "isTrending": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "license-services",
+      "name": "License Services",
+      "description": "Essential licenses and permits for business operations",
+      "icon": "FileCheck",
+      "color": "brand-orange",
+      "subCategories": [
+        {
+          "id": "fssai-license",
+          "name": "FSSAI License",
+          "description": "Food Safety and Standards Authority of India licenses",
+          "services": [
+            {
+              "id": "fssai-basic-registration",
+              "name": "FSSAI Basic Registration",
+              "description": "Basic food business registration for small operators",
+              "isTrending": true
+            },
+            {
+              "id": "fssai-state-license",
+              "name": "FSSAI State License",
+              "description": "State-level food license for medium businesses",
+              "isTrending": true
+            },
+            {
+              "id": "fssai-central-license",
+              "name": "FSSAI Central License",
+              "description": "Central-level food license for large businesses",
+              "isTrending": true
+            },
+            {
+              "id": "fssai-restaurant-license",
+              "name": "FSSAI License for Restaurant",
+              "description": "Food license specifically for restaurant businesses",
+              "isTrending": true
+            },
+            {
+              "id": "fssai-cloud-kitchen",
+              "name": "FSSAI License for Cloud Kitchen",
+              "description": "Food license for cloud kitchen operations",
+              "isTrending": true
+            },
+            {
+              "id": "fssai-home-kitchen",
+              "name": "FSSAI License for Home Kitchen",
+              "description": "Food license for home-based food businesses",
+              "isTrending": true
+            },
+            {
+              "id": "fssai-ecommerce",
+              "name": "FSSAI License for E-commerce",
+              "description": "Food license for online food delivery platforms",
+              "isTrending": true
+            },
+            {
+              "id": "fssai-swiggy",
+              "name": "FSSAI License for Swiggy",
+              "description": "Food license for Swiggy platform vendors",
+              "isTrending": true
+            },
+            {
+              "id": "fssai-zomato",
+              "name": "FSSAI License for Zomato",
+              "description": "Food license for Zomato platform vendors",
+              "isTrending": true
+            },
+            {
+              "id": "fssai-bakery",
+              "name": "FSSAI License for Bakery",
+              "description": "Food license for bakery and confectionery businesses",
+              "isTrending": false
+            },
+            {
+              "id": "fssai-catering",
+              "name": "FSSAI License for Catering Services",
+              "description": "Food license for catering and event food services",
+              "isTrending": false
+            },
+            {
+              "id": "fssai-food-truck",
+              "name": "FSSAI License for Food Truck",
+              "description": "Food license for mobile food truck operations",
+              "isTrending": false
+            }
+          ]
+        },
+        {
+          "id": "fire-noc",
+          "name": "Fire NOC",
+          "description": "Fire safety clearances and No Objection Certificates",
+          "services": [
+            {
+              "id": "fire-noc-general",
+              "name": "Fire NOC (General)",
+              "description": "General fire safety clearance for commercial establishments",
+              "isTrending": false
+            },
+            {
+              "id": "fire-noc-schools",
+              "name": "Fire NOC for Schools",
+              "description": "Fire safety clearance for educational institutions",
+              "isTrending": false
+            },
+            {
+              "id": "fire-noc-malls",
+              "name": "Fire NOC for Malls",
+              "description": "Fire safety clearance for shopping malls and complexes",
+              "isTrending": false
+            },
+            {
+              "id": "fire-noc-hotels",
+              "name": "Fire NOC for Hotels",
+              "description": "Fire safety clearance for hotel and accommodation facilities",
+              "isTrending": false
+            },
+            {
+              "id": "fire-noc-factories",
+              "name": "Fire NOC for Factories",
+              "description": "Fire safety clearance for manufacturing units",
+              "isTrending": false
+            },
+            {
+              "id": "fire-noc-restaurants",
+              "name": "Fire NOC for Restaurants",
+              "description": "Fire safety clearance for restaurant and food establishments",
+              "isTrending": false
+            },
+            {
+              "id": "fire-noc-petrol-pumps",
+              "name": "Fire NOC for Petrol Pumps",
+              "description": "Fire safety clearance for fuel stations",
+              "isTrending": false
+            }
+          ]
+        },
+        {
+          "id": "trade-license",
+          "name": "Trade License",
+          "description": "Municipal trade licenses for business operations",
+          "services": [
+            {
+              "id": "trade-license-online",
+              "name": "Trade License Registration (Online)",
+              "description": "Online trade license registration for businesses",
+              "isTrending": true
+            },
+            {
+              "id": "trade-license-renewal",
+              "name": "Trade License Renewal (Online)",
+              "description": "Online renewal of existing trade licenses",
+              "isTrending": true
+            },
+            {
+              "id": "trade-license-hotels",
+              "name": "Trade License for Hotels",
+              "description": "Trade license specifically for hotel businesses",
+              "isTrending": false
+            },
+            {
+              "id": "trade-license-restaurants",
+              "name": "Trade License for Restaurants",
+              "description": "Trade license specifically for restaurant businesses",
+              "isTrending": false
+            },
+            {
+              "id": "trade-license-retail",
+              "name": "Trade License for Retail Stores",
+              "description": "Trade license for retail and commercial stores",
+              "isTrending": false
+            },
+            {
+              "id": "trade-license-hospitals",
+              "name": "Trade License for Hospitals",
+              "description": "Trade license for healthcare facilities",
+              "isTrending": false
+            },
+            {
+              "id": "trade-license-factories",
+              "name": "Trade License for Factories",
+              "description": "Trade license for manufacturing units",
+              "isTrending": false
+            }
+          ]
+        },
+        {
+          "id": "liquor-license",
+          "name": "Liquor License",
+          "description": "Alcohol licenses for hospitality businesses",
+          "services": [
+            {
+              "id": "hotel-restaurant-bar-license",
+              "name": "Hotel, Restaurant & Bar License",
+              "description": "Comprehensive liquor license for hospitality establishments",
+              "isTrending": false
+            },
+            {
+              "id": "club-liquor-license",
+              "name": "Club Liquor License",
+              "description": "Liquor license for private clubs and associations",
+              "isTrending": false
+            },
+            {
+              "id": "retail-liquor-license",
+              "name": "Retail Liquor License",
+              "description": "Liquor license for retail alcohol sales",
+              "isTrending": false
+            },
+            {
+              "id": "wholesale-liquor-license",
+              "name": "Wholesale Liquor License",
+              "description": "Liquor license for wholesale alcohol distribution",
+              "isTrending": false
+            },
+            {
+              "id": "microbrewery-license",
+              "name": "Microbrewery Liquor License",
+              "description": "Liquor license for craft beer brewing operations",
+              "isTrending": true
+            },
+            {
+              "id": "special-event-liquor",
+              "name": "Special Event Liquor License",
+              "description": "Temporary liquor license for special events",
+              "isTrending": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "compliance-returns",
+      "name": "Compliance & Returns",
+      "description": "Annual compliance and return filing services",
+      "icon": "FileText",
+      "color": "brand-navy",
+      "subCategories": [
+        {
+          "id": "annual-filing",
+          "name": "Annual Filing",
+          "description": "Annual compliance filing for companies and businesses",
+          "services": [
+            {
+              "id": "annual-filing-pvt-ltd",
+              "name": "Annual Compliance of Pvt. Ltd. Company",
+              "description": "Complete annual compliance for private limited companies",
+              "isTrending": true
+            },
+            {
+              "id": "annual-filing-llp",
+              "name": "Annual Compliance of LLP",
+              "description": "Annual compliance filing for Limited Liability Partnerships",
+              "isTrending": true
+            },
+            {
+              "id": "annual-filing-section-8",
+              "name": "Compliances of Section 8 Company",
+              "description": "Annual compliance for non-profit Section 8 companies",
+              "isTrending": true
+            },
+            {
+              "id": "annual-filing-nidhi",
+              "name": "Compliances of Nidhi Company",
+              "description": "Annual compliance for Nidhi mutual benefit societies",
+              "isTrending": false
+            },
+            {
+              "id": "annual-filing-nbfc",
+              "name": "Compliances of NBFC",
+              "description": "Annual compliance for Non-Banking Financial Companies",
+              "isTrending": false
+            }
+          ]
+        },
+        {
+          "id": "return-filing",
+          "name": "Return Filing",
+          "description": "Various return filing services",
+          "services": [
+            {
+              "id": "fssai-returns",
+              "name": "FSSAI Returns Filing",
+              "description": "Food business return filing with FSSAI",
+              "isTrending": false
+            },
+            {
+              "id": "posh-returns",
+              "name": "POSH Annual Return Filing",
+              "description": "Prevention of Sexual Harassment annual return filing",
+              "isTrending": true
+            },
+            {
+              "id": "income-tax-returns",
+              "name": "Income Tax Return Filing",
+              "description": "Individual and corporate income tax return filing",
+              "isTrending": true
+            },
+            {
+              "id": "itr-u-filing",
+              "name": "Form ITR-U Filing",
+              "description": "Updated Income Tax Return filing for corrections",
+              "isTrending": true
+            },
+            {
+              "id": "gst-returns",
+              "name": "GST Return Filing",
+              "description": "Goods and Services Tax return filing",
+              "isTrending": true
+            },
+            {
+              "id": "tds-returns",
+              "name": "TDS Return Filing",
+              "description": "Tax Deducted at Source return filing",
+              "isTrending": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "renewal-services",
+      "name": "Renewal Services",
+      "description": "License and registration renewal services",
+      "icon": "RefreshCw",
+      "color": "brand-orange",
+      "subCategories": [
+        {
+          "id": "license-renewals",
+          "name": "License Renewals",
+          "description": "Renewal of various business licenses",
+          "services": [
+            {
+              "id": "fssai-renewal",
+              "name": "FSSAI Renewal",
+              "description": "Food license renewal services",
+              "isTrending": true
+            },
+            {
+              "id": "trademark-renewal",
+              "name": "Trademark Renewal",
+              "description": "Trademark registration renewal services",
+              "isTrending": true
+            },
+            {
+              "id": "trade-license-renewal",
+              "name": "Trade License Renewal",
+              "description": "Municipal trade license renewal",
+              "isTrending": true
+            },
+            {
+              "id": "factory-license-renewal",
+              "name": "Factory License Renewal",
+              "description": "Manufacturing unit license renewal",
+              "isTrending": false
+            },
+            {
+              "id": "drug-license-renewal",
+              "name": "Drug License Renewal",
+              "description": "Pharmaceutical license renewal services",
+              "isTrending": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "import-export",
+      "name": "Import/Export Services",
+      "description": "International trade and import-export services",
+      "icon": "Globe",
+      "color": "brand-navy",
+      "subCategories": [
+        {
+          "id": "iec-registration",
+          "name": "IEC Registration",
+          "description": "Import Export Code registration",
+          "services": [
+            {
+              "id": "iec-code-registration",
+              "name": "IEC Import Export Code Registration",
+              "description": "Import Export Code registration for international trade",
+              "isTrending": true
+            },
+            {
+              "id": "iec-code-renewal",
+              "name": "IEC Import Export Code Renewal",
+              "description": "Renewal of existing Import Export Code",
+              "isTrending": true
+            }
+          ]
+        },
+        {
+          "id": "certificate-of-origin",
+          "name": "Certificate of Origin",
+          "description": "Origin certificates for international trade",
+          "services": [
+            {
+              "id": "certificate-of-origin-services",
+              "name": "Certificate of Origin Services",
+              "description": "Origin certificate services for export documentation",
+              "isTrending": false
+            },
+            {
+              "id": "india-uk-fta",
+              "name": "India-UK Free Trade Agreement (FTA)",
+              "description": "FTA certificate for India-UK trade",
+              "isTrending": true
+            },
+            {
+              "id": "india-australia-fta",
+              "name": "India Australia Free Trade Agreement (ECTA)",
+              "description": "Economic Cooperation and Trade Agreement certificate",
+              "isTrending": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "certification-services",
+      "name": "Certification Services",
+      "description": "Quality certifications and standards compliance",
+      "icon": "Award",
+      "color": "brand-orange",
+      "subCategories": [
+        {
+          "id": "bis-registration",
+          "name": "BIS Registration",
+          "description": "Bureau of Indian Standards registration",
+          "services": [
+            {
+              "id": "bis-registration-online",
+              "name": "BIS Registration Online",
+              "description": "Online BIS registration for product certification",
+              "isTrending": true
+            },
+            {
+              "id": "bis-crs-registration",
+              "name": "BIS CRS Registration",
+              "description": "Compulsory Registration Scheme registration",
+              "isTrending": true
+            },
+            {
+              "id": "isi-mark-registration",
+              "name": "ISI Mark Registration",
+              "description": "ISI mark certification for quality products",
+              "isTrending": true
+            },
+            {
+              "id": "bis-hallmark-registration",
+              "name": "BIS Hallmark Registration",
+              "description": "Hallmark certification for precious metals",
+              "isTrending": true
+            }
+          ]
+        },
+        {
+          "id": "iso-certification",
+          "name": "ISO Certification",
+          "description": "International Organization for Standardization certifications",
+          "services": [
+            {
+              "id": "iso-certification-general",
+              "name": "ISO Certification",
+              "description": "General ISO certification services",
+              "isTrending": true
+            }
+          ]
+        },
+        {
+          "id": "wpc-certificate",
+          "name": "WPC Certificate",
+          "description": "Wireless Planning and Coordination certificate",
+          "services": [
+            {
+              "id": "wpc-eta-certificate",
+              "name": "WPC ETA Certificate",
+              "description": "Equipment Type Approval certificate for wireless devices",
+              "isTrending": true
+            },
+            {
+              "id": "wpc-bluetooth-devices",
+              "name": "WPC Certificate for Bluetooth Devices",
+              "description": "WPC certificate for Bluetooth enabled devices",
+              "isTrending": true
+            },
+            {
+              "id": "wpc-wifi-router",
+              "name": "WPC Certificate for Wi-Fi Router",
+              "description": "WPC certificate for wireless routers",
+              "isTrending": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intellectual-property",
+      "name": "Intellectual Property (IPR)",
+      "description": "Trademark, patent, and copyright services",
+      "icon": "Copyright",
+      "color": "brand-navy",
+      "subCategories": [
+        {
+          "id": "trademark",
+          "name": "Trademark",
+          "description": "Trademark registration and protection services",
+          "services": [
+            {
+              "id": "trademark-registration",
+              "name": "Trademark Registration",
+              "description": "Complete trademark registration process",
+              "isTrending": true
+            },
+            {
+              "id": "trademark-renewal",
+              "name": "Trademark Renewal",
+              "description": "Trademark registration renewal services",
+              "isTrending": true
+            },
+            {
+              "id": "trademark-objection-reply",
+              "name": "Trademark Objection Reply",
+              "description": "Response to trademark examination objections",
+              "isTrending": true
+            },
+            {
+              "id": "trademark-opposition",
+              "name": "Raising Trademark Opposition",
+              "description": "Filing opposition against conflicting trademark applications",
+              "isTrending": false
+            },
+            {
+              "id": "trademark-hearing",
+              "name": "Trademark Hearing",
+              "description": "Representation in trademark hearing proceedings",
+              "isTrending": false
+            }
+          ]
+        },
+        {
+          "id": "patent",
+          "name": "Patent",
+          "description": "Patent registration and protection services",
+          "services": [
+            {
+              "id": "patent-availability",
+              "name": "Patent Availability",
+              "description": "Patent search and availability check",
+              "isTrending": false
+            },
+            {
+              "id": "provisional-patent",
+              "name": "Provisional Patent",
+              "description": "Provisional patent application filing",
+              "isTrending": false
+            },
+            {
+              "id": "patent-complete",
+              "name": "Patent Complete",
+              "description": "Complete patent application filing",
+              "isTrending": false
+            }
+          ]
+        },
+        {
+          "id": "copyright",
+          "name": "Copyright",
+          "description": "Copyright registration and protection services",
+          "services": [
+            {
+              "id": "copyright-registration",
+              "name": "Copyright Registration",
+              "description": "Complete copyright registration process",
+              "isTrending": false
+            },
+            {
+              "id": "logo-copyright",
+              "name": "Logo Copyright Registration",
+              "description": "Copyright registration for logos and designs",
+              "isTrending": false
+            },
+            {
+              "id": "brand-copyright",
+              "name": "Brand Copyright Registration",
+              "description": "Copyright registration for brand elements",
+              "isTrending": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tax-services",
+      "name": "Tax Services",
+      "description": "Tax registration, filing, and compliance services",
+      "icon": "Calculator",
+      "color": "brand-orange",
+      "subCategories": [
+        {
+          "id": "gst-registration",
+          "name": "GST Registration",
+          "description": "Goods and Services Tax registration services",
+          "services": [
+            {
+              "id": "gst-registration-general",
+              "name": "GST Registration",
+              "description": "General GST registration for businesses",
+              "isTrending": true
+            },
+            {
+              "id": "gst-registration-pvt-ltd",
+              "name": "GST Registration for Private Limited Company",
+              "description": "GST registration specifically for Pvt Ltd companies",
+              "isTrending": true
+            },
+            {
+              "id": "gst-registration-ngo",
+              "name": "GST Registration for NGO",
+              "description": "GST registration for non-governmental organizations",
+              "isTrending": false
+            },
+            {
+              "id": "gst-refund",
+              "name": "GST Refund",
+              "description": "GST refund processing and claim services",
+              "isTrending": true
+            },
+            {
+              "id": "gst-notice-reply",
+              "name": "GST Notice Reply",
+              "description": "Response to GST department notices",
+              "isTrending": true
+            }
+          ]
+        },
+        {
+          "id": "income-tax",
+          "name": "Income Tax",
+          "description": "Income tax registration and filing services",
+          "services": [
+            {
+              "id": "pan-card-application",
+              "name": "PAN Card Application",
+              "description": "Permanent Account Number application",
+              "isTrending": true
+            },
+            {
+              "id": "tan-application",
+              "name": "TAN Application",
+              "description": "Tax Deduction Account Number application",
+              "isTrending": false
+            },
+            {
+              "id": "professional-tax",
+              "name": "Professional Tax Registration",
+              "description": "Professional tax registration for employees",
+              "isTrending": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tender-government",
+      "name": "Tender & Government Services",
+      "description": "Government tenders and procurement services",
+      "icon": "Building",
+      "color": "brand-navy",
+      "subCategories": [
+        {
+          "id": "gem-registration",
+          "name": "GeM Registration",
+          "description": "Government e-Marketplace registration",
+          "services": [
+            {
+              "id": "gem-registration-general",
+              "name": "GeM Registration",
+              "description": "General GeM portal registration",
+              "isTrending": true
+            },
+            {
+              "id": "gem-vendor-assessment",
+              "name": "GeM Vendor Assessment",
+              "description": "Vendor assessment for GeM portal",
+              "isTrending": true
+            },
+            {
+              "id": "gem-product-listing",
+              "name": "Product Listing on GeM",
+              "description": "Product listing services on GeM portal",
+              "isTrending": true
+            },
+            {
+              "id": "make-in-india-certification",
+              "name": "Make in India Certification",
+              "description": "Make in India certification for GeM portal",
+              "isTrending": true
+            }
+          ]
+        },
+        {
+          "id": "ireps-registration",
+          "name": "IREPS Registration",
+          "description": "Indian Railways e-Procurement System registration",
+          "services": [
+            {
+              "id": "ireps-registration-general",
+              "name": "IREPS Registration",
+              "description": "General IREPS portal registration",
+              "isTrending": false
+            },
+            {
+              "id": "ireps-pvt-ltd",
+              "name": "IREPS Registration for Pvt. Ltd Companies",
+              "description": "IREPS registration for private limited companies",
+              "isTrending": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "legal-services",
+      "name": "Legal Services",
+      "description": "Legal documentation and certificate services",
+      "icon": "Scale",
+      "color": "brand-orange",
+      "subCategories": [
+        {
+          "id": "legal-certificates",
+          "name": "Legal Certificates",
+          "description": "Various legal certificates and documentation",
+          "services": [
+            {
+              "id": "succession-certificate",
+              "name": "Succession Certificate",
+              "description": "Legal succession certificate for inheritance",
+              "isTrending": false
+            },
+            {
+              "id": "money-recovery",
+              "name": "Money Recovery",
+              "description": "Legal services for money recovery",
+              "isTrending": false
+            },
+            {
+              "id": "letter-of-administration",
+              "name": "Letter of Administration",
+              "description": "Legal letter of administration for estates",
+              "isTrending": false
+            },
+            {
+              "id": "police-clearance-certificate",
+              "name": "Police Clearance Certificate",
+              "description": "Police clearance certificate for various purposes",
+              "isTrending": true
+            },
+            {
+              "id": "pcc-for-hotels",
+              "name": "PCC for Hotels",
+              "description": "Police clearance certificate for hotel businesses",
+              "isTrending": false
+            },
+            {
+              "id": "pcc-for-liquor-license",
+              "name": "PCC for Liquor License",
+              "description": "Police clearance certificate for liquor license",
+              "isTrending": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
