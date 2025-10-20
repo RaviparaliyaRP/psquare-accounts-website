@@ -10,7 +10,7 @@ interface ServiceModalProps {
   service: Service | null;
   isOpen: boolean;
   onClose: () => void;
-  onContactClick: (service: Service) => void;
+  onContactClick?: (service: Service) => void;
 }
 
 export default function ServiceModal({ service, isOpen, onClose, onContactClick }: ServiceModalProps) {
@@ -175,7 +175,7 @@ export default function ServiceModal({ service, isOpen, onClose, onContactClick 
                     size="lg"
                     className="w-full bg-white text-brand-navy hover:bg-gray-100 font-semibold"
                     onClick={() => {
-                      onContactClick(service);
+                      onContactClick?.(service);
                       onClose();
                     }}
                   >

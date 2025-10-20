@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { Calendar, CheckCircle, FileText, FolderOpen, ListChecks, ShieldCheck, Star, ArrowRight } from 'lucide-react';
+import { Calendar, CheckCircle, ListChecks, ShieldCheck, Star, ArrowRight } from 'lucide-react';
 import { services as categories } from '@/data/services';
 import EmbeddedContactForm from '@/components/forms/EmbeddedContactForm';
 
