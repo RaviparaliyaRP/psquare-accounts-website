@@ -3,6 +3,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { TrendingUp, ArrowRight, Phone } from 'lucide-react';
 import { Service } from '@/types';
+import Link from 'next/link';
 import { useState } from 'react';
 
 interface ServiceCardProps {
@@ -27,9 +28,11 @@ export default function ServiceCard({ service, onContactClick }: ServiceCardProp
         <div className="flex items-start justify-between">
           <div className="flex-1">
             <div className="flex items-center space-x-2 mb-2">
-              <CardTitle className="text-lg font-bold text-brand-navy group-hover:text-brand-orange transition-colors duration-300">
-                {service.name}
-              </CardTitle>
+              <Link href={`/services/${service.category}/${service.subCategory}/${service.id}`}>
+                <CardTitle className="text-lg font-bold text-brand-navy group-hover:text-brand-orange transition-colors duration-300">
+                  {service.name}
+                </CardTitle>
+              </Link>
               {service.isTrending && (
                 <Badge className="bg-red-500 text-white text-xs">
                   <TrendingUp className="h-3 w-3 mr-1" />

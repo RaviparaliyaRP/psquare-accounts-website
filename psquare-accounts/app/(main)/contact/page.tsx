@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 // import { Metadata } from 'next';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
@@ -49,6 +49,17 @@ export default function ContactPage() {
       serviceInquiry: value
     }));
   };
+
+  // Preselect service from ?service=
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const svc = params.get('service');
+      if (svc) {
+        setFormData(prev => ({ ...prev, serviceInquiry: svc }));
+      }
+    }
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
