@@ -12,7 +12,7 @@ export default function Hero() {
           src="/hero-bg.jpeg"
           alt="Hero Background"
           fill
-          className="object-cover opacity-10"
+          className="object-cover opacity-5"
           priority
         />
       </div>
@@ -86,7 +86,7 @@ export default function Hero() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-2 border-white text-white hover:bg-white hover:text-brand-navy px-8 py-4 text-lg font-semibold"
+                className="border-2 border-white text-white hover:bg-white hover:text-[#273F4F] px-8 py-4 text-lg font-semibold"
               >
                 <Link href="/contact">Contact Us</Link>
               </Button>

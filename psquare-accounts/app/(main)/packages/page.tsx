@@ -260,7 +260,7 @@ export default function PackagesPage() {
               </Button>
             </Link>
             <Link href="/services">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-brand-navy font-bold">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#273F4F] font-bold">
                 View All Services
               </Button>
             </Link>

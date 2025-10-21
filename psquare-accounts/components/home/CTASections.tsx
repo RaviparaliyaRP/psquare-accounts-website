@@ -34,7 +34,7 @@ export default function CTASections() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-2 border-white text-white hover:bg-white hover:text-brand-navy px-8 py-4 text-lg font-semibold"
+                className="border-2 border-white text-white hover:bg-white hover:text-[#273F4F] px-8 py-4 text-lg font-semibold"
               >
                 <Link href="tel:+918866114756">
                   <Phone className="mr-2 h-5 w-5" />

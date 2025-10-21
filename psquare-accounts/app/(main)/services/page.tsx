@@ -117,7 +117,7 @@ export default function ServicesPage() {
             </a>
             <a
               href="tel:+918866114756"
-              className="border-2 border-white text-white hover:bg-white hover:text-brand-navy px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
+              className="border-2 border-white text-white hover:bg-white hover:text-[#273F4F] px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
             >
               Call Now: +91 88661 14756
             </a>
