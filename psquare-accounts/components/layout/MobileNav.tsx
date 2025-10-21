@@ -78,16 +78,16 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
       />
       
       {/* Mobile Menu */}
-      <div className="fixed inset-y-0 right-0 z-[130] w-full max-w-sm bg-brand-navy shadow-xl lg:hidden">
+      <div className="fixed inset-y-0 right-0 z-[130] w-full max-w-sm bg-brand-primary shadow-xl lg:hidden">
         <div className="flex flex-col h-full">
           {/* Header */}
-          <div className="flex items-center justify-between p-4 border-b border-brand-orange/20">
+          <div className="flex items-center justify-between p-4 border-b border-white/20">
             <h2 className="text-lg font-semibold text-white">Menu</h2>
             <Button
               variant="ghost"
               size="sm"
               onClick={onClose}
-              className="text-white hover:text-brand-orange"
+              className="text-white hover:text-brand-secondary"
             >
               <X className="h-6 w-6" />
             </Button>
@@ -102,7 +102,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
                     <div>
                       <button
                         onClick={() => toggleSubmenu(item.name)}
-                        className="flex items-center justify-between w-full px-3 py-3 text-left text-white hover:text-brand-orange transition-colors duration-200 font-medium"
+                        className="flex items-center justify-between w-full px-3 py-3 text-left text-white hover:text-brand-secondary transition-colors duration-200 font-medium"
                       >
                         <span>{item.name}</span>
                         {openSubmenu === item.name ? (
@@ -113,13 +113,13 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
                       </button>
                       
                       {openSubmenu === item.name && (
-                        <div className="ml-4 space-y-1 border-l border-brand-orange/20 pl-4">
+                        <div className="ml-4 space-y-1 border-l border-white/20 pl-4">
                           {item.submenu.map((subItem) => (
                             <Link
                               key={subItem.name}
                               href={subItem.href}
                               onClick={handleLinkClick}
-                              className="block px-3 py-2 text-gray-300 hover:text-brand-orange transition-colors duration-200"
+                              className="block px-3 py-2 text-white/80 hover:text-brand-secondary transition-colors duration-200"
                             >
                               {subItem.name}
                             </Link>
@@ -131,7 +131,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
                     <Link
                       href={item.href}
                       onClick={handleLinkClick}
-                      className="block px-3 py-3 text-white hover:text-brand-orange transition-colors duration-200 font-medium"
+                      className="block px-3 py-3 text-white hover:text-brand-secondary transition-colors duration-200 font-medium"
                     >
                       {item.name}
                     </Link>
@@ -142,37 +142,37 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
           </nav>
 
           {/* CTA Buttons */}
-          <div className="p-4 border-t border-brand-orange/20 space-y-3">
+          <div className="p-4 border-t border-white/20 space-y-3">
             <Button
               asChild
-              variant="outline"
-              className="w-full border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white"
+              className="w-full btn-primary"
               onClick={handleLinkClick}
             >
               <Link href="/contact">Get Started</Link>
             </Button>
             <Button
               asChild
-              className="w-full bg-brand-orange hover:bg-brand-orange/90 text-white"
+              variant="outline"
+              className="w-full btn-outline-white"
               onClick={handleLinkClick}
             >
-              <Link href="/contact">Contact Us</Link>
+              <Link href="tel:+918866114756">Call Now</Link>
             </Button>
           </div>
 
           {/* Contact Info */}
-          <div className="p-4 border-t border-brand-orange/20 bg-brand-navy/50">
-            <div className="text-sm text-gray-300 space-y-2">
+          <div className="p-4 border-t border-white/20 bg-brand-primary/50">
+            <div className="text-sm text-white/80 space-y-2">
               <div className="flex items-center space-x-2">
-                <span className="text-brand-orange">📞</span>
+                <span className="text-brand-secondary">📞</span>
                 <span>+91 88661 14756</span>
               </div>
               <div className="flex items-center space-x-2">
-                <span className="text-brand-orange">✉️</span>
+                <span className="text-brand-secondary">✉️</span>
                 <span>psquaregst@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
-                <span className="text-brand-orange">🕒</span>
+                <span className="text-brand-secondary">🕒</span>
                 <span>Mon-Sat: 9 AM - 7 PM</span>
               </div>
             </div>
