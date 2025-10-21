@@ -319,12 +319,17 @@ export default function ContactPage() {
               {/* Google Maps */}
               <Card className="border-2 border-gray-300">
                 <CardContent className="p-0">
-                  <div className="h-64 bg-gray-200 flex items-center justify-center">
-                    <div className="text-center">
-                      <MapPin className="h-12 w-12 text-gray-400 mx-auto mb-2" />
-                      <p className="text-gray-500">Google Maps Integration</p>
-                      <p className="text-sm text-gray-400">Vastral, Ahmedabad</p>
-                    </div>
+                  <div className="h-64">
+                    <iframe 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.6385461088394!2d72.65350457476958!3d23.000315417159424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e87b1bf852af7%3A0xfe94250869c087de!2sPsquare%20Accounts!5e0!3m2!1sen!2sin!4v1761033549466!5m2!1sen!2sin" 
+                      width="100%" 
+                      height="100%" 
+                      style={{border: 0}} 
+                      allowFullScreen 
+                      loading="lazy" 
+                      referrerPolicy="no-referrer-when-downgrade"
+                      className="rounded-lg"
+                    />
                   </div>
                 </CardContent>
               </Card>
