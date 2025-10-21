@@ -270,21 +270,21 @@ export default function PrivacyPolicyPage() {
                         <div className="flex items-center space-x-3">
                           <MapPin className="h-5 w-5 text-brand-navy" />
                           <div>
-                            <div className="text-gray-700">📍 Registered Address:</div>
-                            <div className="text-gray-600">[Address, City, State, PIN]</div>
+                            <div className="text-gray-700">Registered Address:</div>
+                            <div className="text-gray-600">Ahmedabad - Gujarat IND</div>
                           </div>
                         </div>
                         <div className="flex items-center space-x-3">
                           <Mail className="h-5 w-5 text-brand-navy" />
                           <div>
-                            <div className="text-gray-700">📧 Email:</div>
+                            <div className="text-gray-700">Email:</div>
                             <div className="text-gray-600">psquaregst@gmail.com</div>
                           </div>
                         </div>
                         <div className="flex items-center space-x-3">
                           <Phone className="h-5 w-5 text-brand-navy" />
                           <div>
-                            <div className="text-gray-700">📞 Phone:</div>
+                            <div className="text-gray-700">Phone:</div>
                             <div className="text-gray-600">+91 88661 14756</div>
                           </div>
                         </div>
