@@ -100,38 +100,29 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Content - Logo/Visual */}
+          {/* Right Content - Owner Photo */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              {/* Main Logo */}
+              {/* Owner Photo Container */}
               <div className="relative w-80 h-80 lg:w-96 lg:h-96">
                 <div className="absolute inset-0 bg-white/10 rounded-full blur-3xl"></div>
                 <div className="relative w-full h-full bg-white/5 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/20">
                   <div className="text-center">
-                    <Image
-                      src="/psqaure-logo.png"
-                      alt="Psquare Accounts Logo"
-                      width={200}
-                      height={200}
-                      className="mx-auto mb-4"
-                    />
-                    <div className="text-white text-2xl font-bold">Psquare</div>
-                    <div className="text-brand-orange text-lg font-semibold">Accounts</div>
-                    <div className="text-white/70 text-sm mt-2">Established 2010</div>
-                    
-                    {/* Owner Photo */}
-                    <div className="mt-6 flex flex-col items-center">
-                      <div className="w-20 h-20 rounded-full overflow-hidden border-3 border-white/30 mb-2">
+                    {/* Owner Photo - Larger */}
+                    <div className="mb-6 flex flex-col items-center">
+                      <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full overflow-hidden border-4 border-white/30 mb-4">
                         <Image 
                           src="/psqaure-owner.png" 
                           alt="Mr. Umang Patel - Founder & CEO" 
-                          width={80}
-                          height={80}
+                          width={160}
+                          height={160}
                           className="w-full h-full object-cover"
                         />
                       </div>
-                      <div className="text-white text-sm font-semibold">Mr. Umang Patel</div>
-                      <div className="text-white/80 text-xs">Founder & CEO</div>
+                      <div className="text-white text-xl lg:text-2xl font-bold">Mr. Umang Patel</div>
+                      <div className="text-brand-orange text-lg lg:text-xl font-semibold">Founder & CEO</div>
+                      <div className="text-white/70 text-sm lg:text-base mt-2">Psquare Accounts</div>
+                      <div className="text-white/60 text-xs lg:text-sm">Established 2010</div>
                     </div>
                   </div>
                 </div>
