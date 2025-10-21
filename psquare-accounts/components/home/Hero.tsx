@@ -5,9 +5,19 @@ import { ArrowRight, Phone, Mail, CheckCircle } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative text-white overflow-hidden bg-gradient-to-br from-brand-primary via-brand-primary to-brand-secondary">
-      {/* Background Overlay for Text Readability */}
-      <div className="absolute inset-0 bg-black/40"></div>
+    <section className="relative text-white overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/hero-bg.jpeg"
+          alt="Hero Background"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Black Overlay for Text Readability */}
+        <div className="absolute inset-0 bg-black/80"></div>
+      </div>
       
       <div className="container-responsive space-section relative z-10">
         <div className="max-w-5xl mx-auto text-center">
