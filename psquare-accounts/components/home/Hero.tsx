@@ -6,7 +6,18 @@ import { ArrowRight, Phone, Mail, CheckCircle } from 'lucide-react';
 export default function Hero() {
   return (
     <section className="relative text-white overflow-hidden bg-brand-primary">
-      <div className="container-responsive space-section">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/hero-bg"
+          alt="Hero Background"
+          fill
+          className="object-cover opacity-20"
+          priority
+        />
+      </div>
+      
+      <div className="container-responsive space-section relative z-10">
         <div className="max-w-5xl mx-auto text-center">
           <div className="space-y-8">
             {/* Badge */}
@@ -31,7 +42,7 @@ export default function Hero() {
             <div className="flex flex-wrap justify-center gap-6">
               <div className="flex items-center space-x-2">
                 <CheckCircle className="h-5 w-5 text-brand-secondary flex-shrink-0" />
-                <span className="text-white/90 text-base font-medium">15+ Years</span>
+                <span className="text-white/90 text-base font-medium">15+ Years of Experience</span>
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="h-5 w-5 text-brand-secondary flex-shrink-0" />
