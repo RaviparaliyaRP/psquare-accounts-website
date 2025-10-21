@@ -296,7 +296,7 @@ export default function BlogPage() {
               </Button>
             </Link>
             <Link href="/services">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#273F4F] font-bold">
+              <Button size="lg" variant="outline" className="border-white text-[#273F4F] hover:bg-white hover:text-[#273F4F] font-bold">
                 View Our Services
               </Button>
             </Link>

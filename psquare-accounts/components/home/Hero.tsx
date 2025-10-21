@@ -86,7 +86,7 @@ export default function Hero() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-2 border-white text-white hover:bg-white hover:text-[#273F4F] px-8 py-4 text-lg font-semibold"
+                className="border-2 border-white text-[#273F4F] hover:bg-white hover:text-[#273F4F] px-8 py-4 text-lg font-semibold"
               >
                 <Link href="/contact">Contact Us</Link>
               </Button>
