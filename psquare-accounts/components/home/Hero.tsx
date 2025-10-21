@@ -64,7 +64,7 @@ export default function Hero() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-2 border-white text-white hover:bg-white hover:text-brand-primary px-10 py-5 text-xl font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                className="border-2 border-white text-brand-primary bg-white hover:bg-brand-primary hover:text-white px-10 py-5 text-xl font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <Link href="/contact">Contact Us</Link>
               </Button>
