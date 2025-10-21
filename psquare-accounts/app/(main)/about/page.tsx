@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import { Building2, Users, Award, Clock, MapPin, Phone, Mail } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
+import { Section, Container, Grid, Flex, Heading1, Heading2, Heading3, BodyLarge, Body } from '@/components/ui/StandardLayout';
+import { StandardCard, StandardCardHeader, StandardCardContent } from '@/components/ui/StandardCard';
+import { StandardButton } from '@/components/ui/StandardButton';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
@@ -11,23 +13,23 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-brand-light">
       {/* Hero Section */}
-      <section className="gradient-contrast text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <Section background="primary" spacing="section">
+        <Container>
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <Heading1 className="text-white mb-6">
               About Psquare Accounts
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+            </Heading1>
+            <BodyLarge className="text-white/90 mb-8 max-w-3xl mx-auto">
               Your Trusted Partner for Business Licensing & Registration
-            </p>
-            <p className="text-lg opacity-90 max-w-2xl mx-auto">
+            </BodyLarge>
+            <Body className="text-white/80 max-w-2xl mx-auto">
               From Registration to Approval — We Handle It All
-            </p>
+            </Body>
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       {/* Company Story */}
       <section className="py-20">
