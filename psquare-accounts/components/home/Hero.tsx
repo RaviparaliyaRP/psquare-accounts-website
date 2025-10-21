@@ -7,9 +7,8 @@ export default function Hero() {
   return (
     <section className="relative text-white overflow-hidden bg-brand-primary">
       <div className="container-responsive space-section">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Left Content */}
-          <div className="space-y-6">
+        <div className="max-w-5xl mx-auto text-center">
+          <div className="space-y-8">
             {/* Badge */}
             <div className="inline-flex items-center px-4 py-2 bg-brand-secondary/20 border border-brand-secondary/30 rounded-full text-brand-secondary text-sm font-medium">
               <CheckCircle className="h-4 w-4 mr-2" />
@@ -28,36 +27,36 @@ export default function Hero() {
               From Registration to Approval — We Handle It All.
             </p>
 
-            {/* Key Points - Simplified */}
-            <div className="grid grid-cols-2 gap-3">
+            {/* Key Points - Centered */}
+            <div className="flex flex-wrap justify-center gap-6">
               <div className="flex items-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-brand-secondary flex-shrink-0" />
-                <span className="text-white/90 text-sm">15+ Years</span>
+                <CheckCircle className="h-5 w-5 text-brand-secondary flex-shrink-0" />
+                <span className="text-white/90 text-base font-medium">15+ Years</span>
               </div>
               <div className="flex items-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-brand-secondary flex-shrink-0" />
-                <span className="text-white/90 text-sm">1500+ Clients</span>
+                <CheckCircle className="h-5 w-5 text-brand-secondary flex-shrink-0" />
+                <span className="text-white/90 text-base font-medium">1500+ Clients</span>
               </div>
               <div className="flex items-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-brand-secondary flex-shrink-0" />
-                <span className="text-white/90 text-sm">Fast Service</span>
+                <CheckCircle className="h-5 w-5 text-brand-secondary flex-shrink-0" />
+                <span className="text-white/90 text-base font-medium">Fast Service</span>
               </div>
               <div className="flex items-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-brand-secondary flex-shrink-0" />
-                <span className="text-white/90 text-sm">Expert Team</span>
+                <CheckCircle className="h-5 w-5 text-brand-secondary flex-shrink-0" />
+                <span className="text-white/90 text-base font-medium">Expert Team</span>
               </div>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex-responsive">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 asChild
                 size="lg"
-                className="btn-primary text-lg px-8 py-4"
+                className="bg-brand-secondary hover:bg-brand-secondary/90 text-white px-10 py-5 text-xl font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <Link href="/contact">
                   Get Started
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-3 h-6 w-6" />
                 </Link>
               </Button>
               
@@ -65,24 +64,24 @@ export default function Hero() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="btn-outline-white text-lg px-8 py-4"
+                className="border-2 border-white text-white hover:bg-white hover:text-brand-primary px-10 py-5 text-xl font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <Link href="/contact">Contact Us</Link>
               </Button>
             </div>
 
-            {/* Contact Info - Simplified */}
-            <div className="flex-responsive pt-2">
-              <div className="flex items-center space-x-3">
-                <Phone className="h-4 w-4 text-brand-secondary" />
+            {/* Contact Info - Centered */}
+            <div className="flex flex-col sm:flex-row gap-6 justify-center pt-4">
+              <div className="flex items-center justify-center space-x-3">
+                <Phone className="h-5 w-5 text-brand-secondary" />
                 <div>
-                  <div className="text-white font-semibold text-sm">+91 88661 14756</div>
+                  <div className="text-white font-bold text-lg">+91 88661 14756</div>
                 </div>
               </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="h-4 w-4 text-brand-secondary" />
+              <div className="flex items-center justify-center space-x-3">
+                <Mail className="h-5 w-5 text-brand-secondary" />
                 <div>
-                  <div className="text-white font-semibold text-sm">psquaregst@gmail.com</div>
+                  <div className="text-white font-bold text-lg">psquaregst@gmail.com</div>
                 </div>
               </div>
             </div>
