@@ -185,7 +185,7 @@ export default function ServiceModal({ service, isOpen, onClose, onContactClick 
                   <Button
                     size="lg"
                     variant="outline"
-                    className="w-full border-white text-[#273F4F] hover:bg-white hover:text-[#273F4F]"
+                    className="w-full border-white text-white hover:bg-white hover:text-[#273F4F]"
                     onClick={() => {
                       window.open('tel:+918866114756', '_self');
                     }}

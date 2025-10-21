@@ -80,7 +80,7 @@ export default function ServiceDetailPage({ params }: ServicePageProps) {
               </div>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link href={contactHref} className="px-6 py-3 bg-white text-brand-navy font-bold rounded-lg hover:bg-gray-100">Get Started</Link>
-                <a href="#contact" className="px-6 py-3 border-2 border-white text-[#273F4F] font-bold rounded-lg hover:bg-white hover:text-[#273F4F]">Talk to Expert</a>
+                <a href="#contact" className="px-6 py-3 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-[#273F4F]">Talk to Expert</a>
               </div>
             </div>
             <div className="relative">{/* Decorative graphic */}
