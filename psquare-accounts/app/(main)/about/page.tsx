@@ -1,8 +1,7 @@
 import { Metadata } from 'next';
 import { Building2, Users, Award, Clock, MapPin, Phone, Mail } from 'lucide-react';
-import { Section, Container, Grid, Flex, Heading1, Heading2, Heading3, BodyLarge, Body } from '@/components/ui/StandardLayout';
-import { StandardCard, StandardCardHeader, StandardCardContent } from '@/components/ui/StandardCard';
-import { StandardButton } from '@/components/ui/StandardButton';
+import { Section, Container, Heading1, BodyLarge, Body } from '@/components/ui/StandardLayout';
+import { Card, CardContent } from '@/components/ui/card';
 import Image from 'next/image';
 
 export const metadata: Metadata = {

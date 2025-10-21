@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
-import { FileText, Shield, Users, CreditCard, Lock, AlertTriangle, Phone, Mail, MapPin, Clock } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { FileText, Shield, Users, CreditCard, Lock, AlertTriangle, Phone, Mail, MapPin } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -59,7 +59,7 @@ export default function TermsOfServicePage() {
           </CardHeader>
           <CardContent className="space-y-4">
             <p className="text-gray-700 leading-relaxed">
-              These Terms of Service ("Terms") govern your use of our website psquareaccounts.in and the services we provide related to company registration, GST registration, tax filings, and other corporate documentation support.
+              These Terms of Service (&quot;Terms&quot;) govern your use of our website psquareaccounts.in and the services we provide related to company registration, GST registration, tax filings, and other corporate documentation support.
             </p>
             <p className="text-gray-700 leading-relaxed">
               By accessing or using our website, you agree to comply with these Terms.

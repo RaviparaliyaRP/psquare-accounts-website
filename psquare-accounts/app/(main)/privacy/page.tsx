@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { Shield, Lock, Eye, Users, FileText, Phone, Mail, MapPin, Clock } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy - Psquare Accounts | Data Protection & Privacy',
