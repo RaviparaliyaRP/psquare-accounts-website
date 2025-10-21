@@ -83,8 +83,25 @@ export default function ServiceDetailPage({ params }: ServicePageProps) {
                 <a href="#contact" className="px-6 py-3 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-[#273F4F]">Talk to Expert</a>
               </div>
             </div>
-            <div className="relative">{/* Decorative graphic */}
-              <div className="aspect-[4/3] rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20" />
+            <div className="relative">{/* Service-specific graphic */}
+              <div className="aspect-[4/3] rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 flex flex-col justify-between p-6">
+                {/* Service Info */}
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold text-white mb-2">{svc.name}</h3>
+                  <p className="text-white/80 text-sm mb-4">Professional Service</p>
+                  <div className="flex justify-center space-x-2 mb-4">
+                    <span className="px-3 py-1 bg-white/20 rounded-full text-white text-xs">Expert Team</span>
+                    <span className="px-3 py-1 bg-white/20 rounded-full text-white text-xs">Fast Processing</span>
+                  </div>
+                </div>
+                
+                {/* Company Logo/Name */}
+                <div className="text-center">
+                  <div className="text-white/60 text-sm mb-1">Powered by</div>
+                  <div className="text-white font-bold text-lg">Psquare Accounts</div>
+                  <div className="text-white/60 text-xs">Your Trusted Partner</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
