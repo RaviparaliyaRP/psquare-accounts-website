@@ -170,7 +170,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                   <CardContent className="p-6">
                     <h3 className="text-lg font-bold text-gray-900 mb-4">About the Author</h3>
                     <div className="flex items-center mb-3">
-                      <div className="w-12 h-12 bg-gradient-to-br from-brand-navy to-brand-orange rounded-full flex items-center justify-center">
+                      <div className="w-12 h-12 bg-[#273F4F] rounded-full flex items-center justify-center">
                         <User className="h-6 w-6 text-white" />
                       </div>
                       <div className="ml-3">
@@ -211,7 +211,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 )}
 
                 {/* CTA */}
-                <Card className="bg-gradient-to-r from-brand-navy to-brand-orange text-white">
+                <Card className="bg-[#273F4F] text-white">
                   <CardContent className="p-6 text-center">
                     <h3 className="text-lg font-bold mb-3">Need Help?</h3>
                     <p className="text-sm opacity-90 mb-4">

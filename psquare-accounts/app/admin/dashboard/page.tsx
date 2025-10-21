@@ -75,7 +75,7 @@ export default function AdminDashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-brand-navy to-brand-orange rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-[#273F4F] rounded-lg flex items-center justify-center">
                 <BarChart3 className="h-6 w-6 text-white" />
               </div>
               <div>

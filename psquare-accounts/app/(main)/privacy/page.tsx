@@ -12,7 +12,7 @@ export default function PrivacyPolicyPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className="bg-gradient-to-r from-brand-navy via-brand-navy to-brand-orange text-white py-16">
+      <div className="bg-[#273F4F] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -310,7 +310,7 @@ export default function PrivacyPolicyPage() {
             </section>
 
             {/* Consent Acknowledgment */}
-            <div className="bg-gradient-to-r from-brand-navy to-brand-orange text-white p-6 rounded-lg">
+            <div className="bg-[#273F4F] text-white p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-4">Consent Acknowledgment</h3>
               <p className="text-white/90 mb-4">
                 By using our Website and Services, you agree to this Privacy Policy. If you disagree, please discontinue using our services.

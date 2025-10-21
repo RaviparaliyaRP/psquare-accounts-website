@@ -147,7 +147,7 @@ export default function ServiceModal({ service, isOpen, onClose, onContactClick 
             </Card>
 
             {/* Contact CTA */}
-            <Card className="bg-gradient-to-r from-brand-navy to-brand-orange text-white">
+            <Card className="bg-[#273F4F] text-white">
               <CardHeader>
                 <CardTitle className="text-xl font-bold text-white">
                   Ready to Get Started?

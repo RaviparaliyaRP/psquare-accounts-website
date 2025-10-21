@@ -244,7 +244,7 @@ export default function SubCategoryPage() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
-              <button className="px-8 py-4 bg-gradient-to-r from-brand-navy to-brand-orange text-white font-bold rounded-lg hover:opacity-90 transition-opacity">
+              <button className="px-8 py-4 bg-[#273F4F] text-white font-bold rounded-lg hover:opacity-90 transition-opacity">
                 Get Free Consultation
               </button>
             </Link>

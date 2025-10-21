@@ -50,7 +50,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-gradient-to-br from-brand-navy to-brand-orange rounded-2xl p-8 text-white">
+              <div className="bg-[#273F4F] rounded-2xl p-8 text-white">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
                     <div className="text-3xl font-bold mb-2">15+</div>
@@ -208,7 +208,7 @@ export default function AboutPage() {
       </section>
 
       {/* Contact Information */}
-      <section className="py-20 bg-gradient-to-r from-brand-navy to-brand-orange text-white">
+      <section className="py-20 bg-[#273F4F] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">

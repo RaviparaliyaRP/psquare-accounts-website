@@ -51,10 +51,10 @@ export default function AdminLoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-brand-navy to-brand-orange flex items-center justify-center p-4">
+    <div className="min-h-screen bg-[#273F4F] flex items-center justify-center p-4">
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
-          <div className="w-16 h-16 bg-gradient-to-br from-brand-navy to-brand-orange rounded-full flex items-center justify-center mx-auto mb-4">
+          <div className="w-16 h-16 bg-[#273F4F] rounded-full flex items-center justify-center mx-auto mb-4">
             <Lock className="h-8 w-8 text-white" />
           </div>
           <CardTitle className="text-2xl font-bold text-gray-900">
@@ -105,7 +105,7 @@ export default function AdminLoginPage() {
             <Button
               type="submit"
               disabled={isLoading}
-              className="w-full bg-gradient-to-r from-brand-navy to-brand-orange hover:opacity-90 text-white font-bold py-3"
+              className="w-full bg-[#273F4F] hover:opacity-90 text-white font-bold py-3"
             >
               {isLoading ? (
                 <div className="flex items-center">

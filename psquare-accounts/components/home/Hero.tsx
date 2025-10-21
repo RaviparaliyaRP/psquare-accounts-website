@@ -32,11 +32,11 @@ export default function Hero() {
             </p>
 
             {/* Description */}
-            <p className="text-lg text-white/80 leading-relaxed max-w-2xl">
+            {/* <p className="text-lg text-white/80 leading-relaxed max-w-2xl">
               Expert business licensing and compliance services across India. 
               15+ years of experience helping entrepreneurs and businesses get registered faster 
               with transparent, end-to-end solutions.
-            </p>
+            </p> */}
 
             {/* Key Points */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -128,13 +128,13 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Floating Elements */}
+              {/* Floating Elements
               <div className="absolute -top-4 -right-4 w-16 h-16 bg-brand-orange rounded-full flex items-center justify-center animate-pulse">
                 <CheckCircle className="h-8 w-8 text-white" />
               </div>
               <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
                 <span className="text-white font-bold">15+</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

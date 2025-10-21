@@ -239,7 +239,7 @@ export default function ContactPage() {
                       <Button
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full bg-gradient-to-r from-brand-navy to-brand-orange hover:opacity-90 text-white font-bold py-3"
+                        className="w-full bg-[#273F4F] hover:opacity-90 text-white font-bold py-3"
                       >
                         {isSubmitting ? (
                           <div className="flex items-center">
@@ -330,7 +330,7 @@ export default function ContactPage() {
               </Card>
 
               {/* Quick Contact */}
-              <Card className="bg-gradient-to-r from-brand-navy to-brand-orange text-white">
+              <Card className="bg-[#273F4F] text-white">
                 <CardContent className="p-8 text-center">
                   <h3 className="text-2xl font-bold mb-4">
                     Need Immediate Help?

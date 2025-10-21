@@ -59,7 +59,7 @@ export default function PackagesPage() {
       subtitle: 'For Established Enterprises',
       price: '₹69,999',
       period: 'year',
-      color: 'from-brand-navy to-navy-800',
+      color: 'bg-[#273F4F]',
       borderColor: 'border-brand-navy',
       icon: Award,
       features: [
@@ -114,7 +114,7 @@ export default function PackagesPage() {
                 )}
                 
                 <CardHeader className="text-center pb-4">
-                  <div className={`w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r ${pkg.color} flex items-center justify-center`}>
+                  <div className={`w-16 h-16 mx-auto mb-4 rounded-full ${pkg.color} flex items-center justify-center`}>
                     <pkg.icon className="h-8 w-8 text-white" />
                   </div>
                   <CardTitle className="text-2xl font-bold text-gray-900 mb-2">
@@ -147,7 +147,7 @@ export default function PackagesPage() {
 
                   <Link href="/contact">
                     <Button 
-                      className={`w-full py-3 bg-gradient-to-r ${pkg.color} hover:opacity-90 text-white font-bold transition-all duration-300`}
+                      className={`w-full py-3 ${pkg.color} hover:opacity-90 text-white font-bold transition-all duration-300`}
                     >
                       Get Started
                       <ArrowRight className="h-4 w-4 ml-2" />
@@ -244,7 +244,7 @@ export default function PackagesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-brand-navy to-brand-orange text-white">
+      <section className="py-20 bg-[#273F4F] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Get Started?

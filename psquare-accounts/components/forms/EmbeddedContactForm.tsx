@@ -115,7 +115,7 @@ export default function EmbeddedContactForm({ preselectedService }: EmbeddedCont
               <Label htmlFor="message">Message *</Label>
               <Textarea id="message" name="message" rows={5} value={formData.message} onChange={handleInputChange} required className="mt-1" />
             </div>
-            <Button type="submit" disabled={isSubmitting} className="w-full bg-gradient-to-r from-brand-navy to-brand-orange text-white font-bold py-3">
+            <Button type="submit" disabled={isSubmitting} className="w-full bg-[#273F4F] text-white font-bold py-3">
               {isSubmitting ? (
                 <div className="flex items-center"><div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div> Sending...</div>
               ) : (
