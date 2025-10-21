@@ -131,7 +131,94 @@
   }
 }
 
-/* Solid brand color: #273F4F */
+/* ========================================
+   PSQUARE ACCOUNTS DESIGN SYSTEM
+   ======================================== */
+
+/* Brand Colors */
+:root {
+  --brand-primary: #273F4F;      /* Main brand color */
+  --brand-secondary: #FF8C00;   /* Orange accent */
+  --brand-light: #F8F9FA;       /* Light background */
+  --brand-dark: #1A1A1A;        /* Dark text */
+  --brand-gray: #6B7280;        /* Secondary text */
+  --brand-success: #10B981;     /* Success green */
+  --brand-warning: #F59E0B;     /* Warning yellow */
+  --brand-error: #EF4444;       /* Error red */
+}
+
+/* Typography Scale */
+.text-display { @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-tight; }
+.text-heading-1 { @apply text-3xl md:text-4xl font-bold leading-tight; }
+.text-heading-2 { @apply text-2xl md:text-3xl font-bold leading-tight; }
+.text-heading-3 { @apply text-xl md:text-2xl font-semibold leading-tight; }
+.text-body-large { @apply text-lg leading-relaxed; }
+.text-body { @apply text-base leading-relaxed; }
+.text-body-small { @apply text-sm leading-relaxed; }
+.text-caption { @apply text-xs leading-relaxed; }
+
+/* Spacing Scale */
+.space-section { @apply py-12 md:py-16 lg:py-20; }
+.space-component { @apply py-8 md:py-12; }
+.space-element { @apply py-4 md:py-6; }
+
+/* Button Styles */
+.btn-primary {
+  @apply bg-[var(--brand-primary)] text-white px-6 py-3 rounded-lg font-semibold 
+         hover:opacity-90 transition-all duration-300 
+         focus:outline-none focus:ring-2 focus:ring-[var(--brand-primary)] focus:ring-offset-2;
+}
+
+.btn-secondary {
+  @apply bg-white text-[var(--brand-primary)] border-2 border-[var(--brand-primary)] 
+         px-6 py-3 rounded-lg font-semibold 
+         hover:bg-[var(--brand-primary)] hover:text-white transition-all duration-300
+         focus:outline-none focus:ring-2 focus:ring-[var(--brand-primary)] focus:ring-offset-2;
+}
+
+.btn-outline-white {
+  @apply border-2 border-white text-white px-6 py-3 rounded-lg font-semibold
+         hover:bg-white hover:text-[var(--brand-primary)] transition-all duration-300
+         focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2;
+}
+
+/* Card Styles */
+.card-primary {
+  @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6;
+}
+
+.card-secondary {
+  @apply bg-[var(--brand-light)] rounded-xl shadow-sm border border-gray-200 p-6;
+}
+
+.card-dark {
+  @apply bg-[var(--brand-primary)] text-white rounded-xl shadow-lg p-6;
+}
+
+/* Background Styles */
+.bg-brand-primary { background-color: var(--brand-primary) !important; }
+.bg-brand-secondary { background-color: var(--brand-secondary) !important; }
+.bg-brand-light { background-color: var(--brand-light) !important; }
+
+/* Text Colors */
+.text-brand-primary { color: var(--brand-primary) !important; }
+.text-brand-secondary { color: var(--brand-secondary) !important; }
+.text-brand-gray { color: var(--brand-gray) !important; }
+
+/* Mobile-First Responsive Utilities */
+.container-responsive {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.grid-responsive {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8;
+}
+
+.flex-responsive {
+  @apply flex flex-col sm:flex-row gap-4;
+}
+
+/* Legacy Support */
 .gradient-contrast {
-  background-color: #273F4F !important;
+  background-color: var(--brand-primary) !important;
 }

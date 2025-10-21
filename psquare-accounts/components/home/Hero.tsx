@@ -20,65 +20,58 @@ export default function Hero() {
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20 z-10"></div>
       
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-18 lg:py-30 z-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="container-responsive space-section z-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className="space-y-6">
             {/* Badge */}
-            <div className="inline-flex items-center px-4 py-2 bg-brand-orange/20 border border-brand-orange/30 rounded-full text-brand-orange text-sm font-medium">
+            <div className="inline-flex items-center px-4 py-2 bg-brand-secondary/20 border border-brand-secondary/30 rounded-full text-brand-secondary text-sm font-medium">
               <CheckCircle className="h-4 w-4 mr-2" />
               Trusted by 1500+ Businesses
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+            <h1 className="text-display text-white">
               Your Trusted Partner for{' '}
-              <span className="text-brand-orange">Business</span>{' '}
+              <span className="text-brand-secondary">Business</span>{' '}
               Licensing & Registration
             </h1>
 
             {/* Sub-headline */}
-            <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
+            <p className="text-body-large text-white/90">
               From Registration to Approval — We Handle It All.
             </p>
 
-            {/* Description */}
-            {/* <p className="text-lg text-white/80 leading-relaxed max-w-2xl">
-              Expert business licensing and compliance services across India. 
-              15+ years of experience helping entrepreneurs and businesses get registered faster 
-              with transparent, end-to-end solutions.
-            </p> */}
-
-            {/* Key Points */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="h-5 w-5 text-brand-orange flex-shrink-0" />
-                <span className="text-white/90">15+ Years Experience</span>
+            {/* Key Points - Simplified */}
+            <div className="grid grid-cols-2 gap-3">
+              <div className="flex items-center space-x-2">
+                <CheckCircle className="h-4 w-4 text-brand-secondary flex-shrink-0" />
+                <span className="text-white/90 text-sm">15+ Years</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="h-5 w-5 text-brand-orange flex-shrink-0" />
-                <span className="text-white/90">1500+ Happy Clients</span>
+              <div className="flex items-center space-x-2">
+                <CheckCircle className="h-4 w-4 text-brand-secondary flex-shrink-0" />
+                <span className="text-white/90 text-sm">1500+ Clients</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="h-5 w-5 text-brand-orange flex-shrink-0" />
-                <span className="text-white/90">Fast & Reliable Service</span>
+              <div className="flex items-center space-x-2">
+                <CheckCircle className="h-4 w-4 text-brand-secondary flex-shrink-0" />
+                <span className="text-white/90 text-sm">Fast Service</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="h-5 w-5 text-brand-orange flex-shrink-0" />
-                <span className="text-white/90">Expert Team Support</span>
+              <div className="flex items-center space-x-2">
+                <CheckCircle className="h-4 w-4 text-brand-secondary flex-shrink-0" />
+                <span className="text-white/90 text-sm">Expert Team</span>
               </div>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex-responsive">
               <Button
                 asChild
                 size="lg"
-                className="bg-brand-orange hover:bg-brand-orange/90 text-white px-8 py-4 text-lg font-semibold group"
+                className="btn-primary text-lg px-8 py-4"
               >
                 <Link href="/contact">
                   Get Started
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
               
@@ -86,26 +79,24 @@ export default function Hero() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-2 border-white text-[#273F4F] hover:bg-white hover:text-[#273F4F] px-8 py-4 text-lg font-semibold"
+                className="btn-outline-white text-lg px-8 py-4"
               >
                 <Link href="/contact">Contact Us</Link>
               </Button>
             </div>
 
-            {/* Contact Info */}
-            <div className="flex flex-col sm:flex-row gap-6 pt-4">
+            {/* Contact Info - Simplified */}
+            <div className="flex-responsive pt-2">
               <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-brand-orange" />
+                <Phone className="h-4 w-4 text-brand-secondary" />
                 <div>
-                  <div className="text-white font-semibold">+91 88661 14756</div>
-                  <div className="text-white/70 text-sm">Call Now</div>
+                  <div className="text-white font-semibold text-sm">+91 88661 14756</div>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-brand-orange" />
+                <Mail className="h-4 w-4 text-brand-secondary" />
                 <div>
-                  <div className="text-white font-semibold">psquaregst@gmail.com</div>
-                  <div className="text-white/70 text-sm">Email Us</div>
+                  <div className="text-white font-semibold text-sm">psquaregst@gmail.com</div>
                 </div>
               </div>
             </div>
