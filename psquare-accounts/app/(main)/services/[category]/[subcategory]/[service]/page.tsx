@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { Calendar, CheckCircle, ListChecks, ShieldCheck, Star, ArrowRight } from 'lucide-react';
 import { services as categories } from '@/data/services';
@@ -85,17 +86,25 @@ export default function ServiceDetailPage({ params }: ServicePageProps) {
             </div>
             <div className="relative">{/* Service-specific graphic */}
               <div className="aspect-[4/3] rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 flex flex-col justify-between p-6">
-                {/* Service Info */}
+                {/* Company Logo - Top */}
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold text-white mb-2">{svc.name}</h3>
-                  <p className="text-white/80 text-sm mb-4">Professional Service</p>
-                  <div className="flex justify-center space-x-2 mb-4">
-                    <span className="px-3 py-1 bg-white/20 rounded-full text-white text-xs">Expert Team</span>
-                    <span className="px-3 py-1 bg-white/20 rounded-full text-white text-xs">Fast Processing</span>
+                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Image
+                      src="/psqaure-logo.png"
+                      alt="Psquare Accounts Logo"
+                      width={40}
+                      height={40}
+                      className="rounded-full"
+                    />
                   </div>
                 </div>
                 
-                {/* Company Logo/Name */}
+                {/* Service Name - Middle */}
+                <div className="text-center flex-1 flex items-center justify-center">
+                  <h3 className="text-3xl font-bold text-white mb-2">{svc.name}</h3>
+                </div>
+                
+                {/* Company Branding - Bottom */}
                 <div className="text-center">
                   <div className="text-white/60 text-sm mb-1">Powered by</div>
                   <div className="text-white font-bold text-lg">Psquare Accounts</div>
@@ -185,5 +194,6 @@ export default function ServiceDetailPage({ params }: ServicePageProps) {
     </div>
   );
 }
+
 
 
