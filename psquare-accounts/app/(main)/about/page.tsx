@@ -244,8 +244,8 @@ export default function AboutPage() {
               <Mail className="h-12 w-12 mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-2">Email</h3>
               <p className="opacity-90">
-                paraliyaravi80@gmail.com<br />
-                info@psquareaccounts.com
+                psquaregst@gmail.com<br />
+                
               </p>
             </div>
           </div>
