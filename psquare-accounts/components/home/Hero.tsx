@@ -16,7 +16,7 @@ export default function Hero() {
           priority
         />
         {/* Black Overlay for Text Readability */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/80"></div>
       </div>
       
       <div className="container-responsive space-section relative z-10">
