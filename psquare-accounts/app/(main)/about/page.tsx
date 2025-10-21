@@ -138,11 +138,6 @@ export default function AboutPage() {
                       width={128}
                       height={128}
                       className="w-full h-full object-cover"
-                      onError={(e) => {
-                        console.error('Image failed to load:', e);
-                        e.currentTarget.style.display = 'none';
-                      }}
-                      onLoad={() => console.log('Owner image loaded successfully')}
                     />
                   </div>
                   <div className="text-center md:text-left">
