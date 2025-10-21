@@ -196,7 +196,7 @@ export default function Footer() {
             <div className="text-sm text-gray-400">
               © 2024 Psquare Accounts. All rights reserved. | Established 2010 | Made with ❤️ in India
             </div>
-            <div className="text-sm text-blue-600 font-medium italic">
+            <div className="text-sm text-blue-600 font-medium italic bg-white px-3 py-1 rounded-md">
               Trust is the foundation of relationships
             </div>
           </div>
